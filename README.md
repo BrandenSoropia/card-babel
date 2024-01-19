@@ -35,6 +35,8 @@ warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the
 1. Navigate to your local copy of this repo, then install dependencies by running `yarn` in your terminal.
 2. Run the app: `yarn dev`, it should be hosted on `localhost:3000`.
 
+- To future Branden, if Next is acting funny, it might be because I installed `v.14` first, then cleared it and installed `v13.4.7` following these [instructions](https://github.com/vercel/next.js/discussions/35794#discussioncomment-4762089). So far it seems fine though!
+
 ### (🏗️ TODO) Connecting to Firestore
 
 This app uses Firestore for API and database services!
