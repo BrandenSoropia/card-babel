@@ -67,3 +67,16 @@ Error: Cannot run login in non-interactive mode. See login:ci to generate a toke
 Just run the command with the interactive flag: `firestore login --interactive`. [(source)](https://github.com/firebase/firebase-tools/issues/149)
 
 </details>
+
+## If Working on Windows Machine: Follow This Suggested Setup
+
+> Only if you're using Windows and mainly writting this because I might forget the steps myself!
+
+<details>
+<summary>Why I use WSL</summary>
+
+I needed an interactive bash terminal. Interactive as in when running things like `create-next-app` or `firebase-cli`, pressing the arrow keys and typing in answers to CLI prompts actually did something. I tried using `git-bash` that comes installed when you install `git` on Windows, but quickly found out it doesn't support that and is generally annoying to use.
+</details>
+
+Install WSL following their docs - https://learn.microsoft.com/en-us/windows/wsl/install
+- You'll have to install `git`, `node` and `firebase-cli` in the WSL partition since WSL is separate from your Windows partition. Basically just install all those in the WSL terminal, following the Unix instructions of those tools.
