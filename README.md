@@ -84,6 +84,16 @@ Just run the command with the interactive flag: `firestore login --interactive`.
 
 </details>
 
+### Firebase Rules
+
+Use `firestore.rules` since we can keep a history of edits and have 1 source of truth.
+
+Once you've done making edits, you can deploy just the rules to Firebase by running the command:
+
+```bash
+firebase deploy --only firestore:rules
+```
+
 ## If Developping on a Windows Machine: Follow This Suggested Setup to Use WSL
 
 > Only if you're using Windows and mainly writting this because I might forget the steps myself!

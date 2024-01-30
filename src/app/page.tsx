@@ -1,41 +1,20 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { collection, addDoc, getDocs } from "firebase/firestore";
-import { db, firebaseApp } from "@/lib/firebase/firebase";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/lib/firebase/firebase";
 
-// TODO: Figure out if connected to Firebase
-// TODO: Try to get card data - https://firebase.google.com/docs/firestore/query-data/get-data
-const citiesCollection = collection(db, "cities");
+const cardsCollection = collection(db, "cards");
 
 export default function Home() {
-  const createCollection = async () => {
-    try {
-      console.log("## addData called", { firebaseApp, db });
-      const docRef = await addDoc(citiesCollection, {
-        name: "San Francisco",
-        state: "CA",
-        country: "USA",
-        capital: false,
-        population: 860000,
-        regions: ["west_coast", "norcal"],
-      });
-
-      console.log("### returned docRef", docRef);
-    } catch (e) {
-      console.log("### addData error:", e);
-    }
-  };
-
   const getData = async () => {
-    const querySnap = await getDocs(citiesCollection);
+    const querySnap = await getDocs(cardsCollection);
 
     if (!querySnap.empty) {
       console.log("### Printing docs");
       querySnap.forEach((doc) => {
-        console.log(doc);
+        console.log("### doc", doc);
       });
     } else {
       // docSnap.data() will be undefined in this case
@@ -45,8 +24,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <button onClick={createCollection}>Create Collections</button>
-      <button onClick={getData}>Add Doc</button>
+      <button onClick={getData}>Get Card Docs</button>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
