@@ -33,9 +33,25 @@ warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the
 - Yarn - Using `v.1.22.21` - [Install instructions found here.](https://yarnpkg.com/getting-started/install)
 
 1. Navigate to your local copy of this repo, then install dependencies by running `yarn` in your terminal.
-2. Run the app: `yarn dev`, it should be hosted on `localhost:3000`.
+2. Create a `.env.local` file in the root folder with the following variables. Then fill the appropriate variables with the config values found in Firestore > Project Settings > General > Scroll down to "Your Apps" and find it in "Web App" - https://console.firebase.google.com/u/1/project/card-babel-ba0f2/settings/general
 
-- To future Branden, if Next is acting funny, it might be because I installed `v.14` first, then cleared it and installed `v13.4.7` following these [instructions](https://github.com/vercel/next.js/discussions/35794#discussioncomment-4762089). So far it seems fine though!
+```bash
+NEXT_PUBLIC_API_KEY=""
+NEXT_PUBLIC_AUTH_DOMAIN=""
+NEXT_PUBLIC_PROJECT_ID=""
+NEXT_PUBLIC_STORAGE_BUCKET=""
+NEXT_PUBLIC_MESSAGING_SENDER_ID=""
+NEXT_PUBLIC_APP_ID=""
+NEXT_PUBLIC_MEASUREMENT_ID=""
+```
+
+3. Run the app: `yarn dev`, it should be hosted on `localhost:3000`.
+
+<details>
+<summary>IF Next.js is acting weird</summary>
+To future Branden, if Next is acting funny, it might be because I installed `v.14` first, then cleared it and installed `v13.4.7` following these [instructions](https://github.com/vercel/next.js/discussions/35794#discussioncomment-4762089). So far it seems fine though!
+
+</details>
 
 ### (🏗️ TODO) Connecting to Firestore
 

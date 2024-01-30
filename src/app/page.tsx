@@ -1,9 +1,52 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import { useEffect } from "react";
+import Image from "next/image";
+import styles from "./page.module.css";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db, firebaseApp } from "@/lib/firebase/firebase";
+
+// TODO: Figure out if connected to Firebase
+// TODO: Try to get card data - https://firebase.google.com/docs/firestore/query-data/get-data
+const citiesCollection = collection(db, "cities");
 
 export default function Home() {
+  const createCollection = async () => {
+    try {
+      console.log("## addData called", { firebaseApp, db });
+      const docRef = await addDoc(citiesCollection, {
+        name: "San Francisco",
+        state: "CA",
+        country: "USA",
+        capital: false,
+        population: 860000,
+        regions: ["west_coast", "norcal"],
+      });
+
+      console.log("### returned docRef", docRef);
+    } catch (e) {
+      console.log("### addData error:", e);
+    }
+  };
+
+  const getData = async () => {
+    const querySnap = await getDocs(citiesCollection);
+
+    if (!querySnap.empty) {
+      console.log("### Printing docs");
+      querySnap.forEach((doc) => {
+        console.log(doc);
+      });
+    } else {
+      // docSnap.data() will be undefined in this case
+      console.log("No documents!");
+    }
+  };
+
   return (
     <main className={styles.main}>
+      <button onClick={createCollection}>Create Collections</button>
+      <button onClick={getData}>Add Doc</button>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -15,7 +58,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -91,5 +134,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
