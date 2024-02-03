@@ -51,7 +51,7 @@ There's already an annoying inconsistency between some weapons. Notice the neste
 </blockquote>
 ```
 
-## Armour
+### Armour
 
 Seems similar to weapons.
 
@@ -71,7 +71,7 @@ Seems similar to weapons.
 </blockquote>
 ```
 
-## Non-Attack Action Cards (Action Cards)
+### Non-Attack Action Cards (Action Cards)
 
 ```html
 <blockquote class="wp-block-quote">
@@ -97,7 +97,7 @@ Seems similar to weapons.
 </blockquote>
 ```
 
-## Attack Action Cards
+### Attack Action Cards
 
 Nice to Have: Bolded keywords to match, example "Stealth", "\* Specialization". Might be able to recognize keywords in text and write a tiny util to wrap it in `b`.
 
@@ -135,7 +135,7 @@ Nice to Have: Bolded keywords to match, example "Stealth", "\* Specialization". 
 </blockquote>
 ```
 
-## Attack Reaction Cards
+### Attack Reaction Cards
 
 ```html
 <blockquote class="wp-block-quote">
@@ -149,7 +149,7 @@ Nice to Have: Bolded keywords to match, example "Stealth", "\* Specialization". 
 </blockquote>
 ```
 
-## Defense Reaction Cards
+### Defense Reaction Cards
 
 ```html
 <blockquote class="wp-block-quote">
@@ -171,4 +171,29 @@ Nice to Have: Bolded keywords to match, example "Stealth", "\* Specialization". 
   <p>このターンの次に受けるダメージを4-2点軽減する。</p>
   <p>”Ponder”トークンを生み出す。</p>
 </blockquote>
+```
+
+### Ideas of How Text Should Look
+
+```markdown
+en-US
+<strong>Uzuri Specialization<strong><i>(You may only have this in your deck if your hero is Uzuri)</i><br>If you've played or activated an attack reaction this chain link, Shake Down has "When this hits a hero, choose red, yellow, or blue. They reveal their hand. Banish a card of the chosen color."
+
+---
+
+jp-JA
+<strong>Uzuri Specialization</strong><i>(ヒーローがウズリでなければデッキに入れられない)</i><br>このチェインリンクでアタックリアクションがプレイ/アクティブになったならこれは「これがヒーローにヒットしたとき、赤・黄・青のいずれかを選ぶ。そのヒーローは手札を公開し、選ばれた色のカードを追放する」を得る。
+```
+
+```markdown
+en-US
+
+Each hero puts an attack action card from their graveyard face down into their arsenal. Each hero that does, discards a card.<br>Create a Ponder token under your control and a Frailty token under each opponent's control.<br><strong>Go again</strong>
+
+---
+
+jp-JA
+
+各プレイヤーは墓地からアタックアクションカードを裏向きでアーセナルに置く。そうしたプレイヤーは、手札を 1 枚捨てる。<br>”Ponder”トークンをあなたのコントロールで、”Frailty”トークンを対戦相手のコントロールで生み出す。
+<br><strong>Go Again</strong>
 ```

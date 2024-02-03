@@ -13,6 +13,37 @@ It's been ~5months since I coded, plus it's my first time setting up Next and Fi
 
 ## 📜 History
 
+### February 3, 2024
+
+#### Designing the Firestore "schema" (or basically how I'll be organizing and storing the data)
+
+I'd like to DB to be able to do 3 things:
+
+1. Store all cards and their translations
+2. Be easily searchable (more than likely players will be searching for specific cards)
+3. More a future thing, but support multiple card game data
+
+#### Learning How to Get Data from Firebase
+
+First off, there's lots of different platforms for Firebase and they each have their own docs. There's a few for JS, but the one for client side (via npm) is this one - https://firebase.google.com/docs/reference/js/firestore_.md#functions. (I feel super bad it took me a while to find this specific one haha).
+
+Next I learned how to get data from Firestore: you have to query them! I remember from my past work at Figure1, we used an older API that looked something like `myFirebaseApp.collection(...).getDoc(somePath).where(...)`. It seems that changed and we have something similar: `query(collection, constraint1, constraint2, ...)`. Read more about that here - https://firebase.google.com/docs/firestore/query-data/queries.
+
+#### Ramblings on "Schema" (Document Shape).
+
+**Storing only Effect Text**
+I think a card's attribute, name, cost and etc. are the absolute basic knowledge a player needs to be able to know how to play/use cards. Thus I'm ignoring storing/translating all that and just caring about the card effect(s)/special requirement(s).
+
+**Thoughts on Using Card Number for Document Ids**
+I'd like searching a specific card to be as easy as possible too, so regardless of what language a player speaks, they should be able to search by a card's number. Because of this I'll be using the card number as document ids since they are unique[In Firebase's docs, it mentions not to do this but I think my use case doesn't trigger "hotspotting" as I'm only reading from Firebase.](https://firebase.google.com/docs/firestore/best-practices#document_ids).
+
+> I just confirmed that cards with different pitch value (blue, yellow, red), all have unique codes! [See "Shred" for example](https://fabrary.net/cards/shred-red)
+
+**Thoughts on How to Deal with Multiple Printings of the Same Card**
+There are reprints of cards in different sets, [for example "Ravenous Rabble"](https://fabrary.net/cards/ravenous-rabble-red) that have the same effect but different card numbers.
+
+TBD on how to handle this!
+
 ### Jan 20, 2024
 
 - ✅ Create app in Firebase and add web app
