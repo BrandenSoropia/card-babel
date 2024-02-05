@@ -4,6 +4,19 @@ I'm thinking of scraping Flesh and Blood cards' Japanese translation data from h
 
 Thinking of using Scrapy since there's this nice tutorial from Digital Ocean (which also includes Python setup steps!) - https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3
 
+## General Rules When Translating
+
+Just some rules I saw from fan translations/personal thoughts that hopefully keep things clear. Probably also a good list of rules to have in case I do use a scrapper to format things!
+
+- Keep keywords in English.
+  - My 2 cents: English seems to be relatively more international, plus it's one of the game's original languages.
+- Match styled text between source and translation. Example: bolded keywords stay bolded.
+- Replace card icons with the following. Use capital letters for easier readability.
+  - Power as `{P}`
+  - Defense as `{D}`
+  - Resource as `{R}`, matching number of resource needed. Example: If 2 resource is needed, it'd be `{R}{R}`
+- Keep line breaks/spaces between text
+
 ## Sample HTML
 
 I think I need to be familiar with the HTML's shape if I want to recognize, manipulate and store it. Here's some snippets I'll pull. They'll be categorized by card type in case there are differences, which there most-likely will since there are a variety of cards and ways to use them.

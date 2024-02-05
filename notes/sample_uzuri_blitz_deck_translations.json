@@ -1,0 +1,276 @@
+{
+  "cards": [
+    {
+      "name": "Uzuri",
+      "cardNumber": ["HER076", "HER083", "OUT002", "UZU001"],
+      "translationInfo": {
+        "sourceText": "    https://fabrary.net/cards/uzuri",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Once per Turn Attack Reaction</strong> - Banish a card from your hand face down: Turn the card banished this way face up. If it's an attack action card with cost 2 or less, put target attacking card with <strong>stealth</strong> from the active chain link on the bottom of its owner's deck, then put the banished card onto the active chain link as the attacking card.",
+        "jp-JA": "<strong>ターンに1回アタックリアクション</strong> - あなたの手札を1枚伏せて追放する:この方法で追放したカードを表向きにする。これがコスト2以下のアタックアクションカードなら、アクティブコンバットチェインの<strong>stealth</strong>を持つアタックアクションカードを対象としてそれをオーナーの山札の下へ置き、追放したカードをアクティブコンバットチェインに攻撃したプレイする。"
+      }
+    },
+    {
+      "name": "Uzuri, Switchblade",
+      "cardNumber": ["HER077", "OUT001", "WIN021"],
+      "translationInfo": {
+        "sourceText": "    https://fabrary.net/cards/uzuri",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Once per Turn Attack Reaction</strong> - Banish a card from your hand face down: Turn the card banished this way face up. If it's an attack action card with cost 2 or less, put target attacking card with <strong>stealth</strong> from the active chain link on the bottom of its owner's deck, then put the banished card onto the active chain link as the attacking card.",
+        "jp-JA": "<strong>ターンに1回アタックリアクション</strong> - あなたの手札を1枚伏せて追放する:この方法で追放したカードを表向きにする。これがコスト2以下のアタックアクションカードなら、アクティブコンバットチェインの<strong>stealth</strong>を持つアタックアクションカードを対象としてそれをオーナーの山札の下へ置き、追放したカードをアクティブコンバットチェインに攻撃したプレイする。"
+      }
+    },
+    {
+      "name": "Blacktek Whisperers",
+      "cardNumber": ["DYN117", "FAB110"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/blacktek-whisperers",
+        "translationSource": "deepl"
+      },
+      "details": {
+        "en-US": "While Blacktek Whisperers is in your graveyard, at the start of your turn, you may destroy 2 Silvers you control. If you do, equip Blacktek Whisperers.<br><br><strong>Attack Reaction</strong> - Destroy Blacktek Whisperers: Target Assassin attack action card gains \"When this hits a hero, it gains <strong>go again<strong>.\"<br><br><strong>Battleworn</strong>",
+        "jp-JA": "Blacktek Whisperersがあなたの墓地にある間、あなたのターンの開始時に、あなたはあなたがコントロールするSilverを2体破壊してもよい。そうした場合、Blacktek Whisperersを装備する。<br><br><strong>Attack Reaction</strong> - Blacktek Whisperersを破壊する： 対象のアサシンの攻撃アクションカードは \"これがヒーローにヒットしたとき、<strong>go again</strong>を得る\"。<br><br><strong>Battlworn</strong>"
+      }
+    },
+
+    {
+      "name": "Flick Knives",
+      "cardNumber": ["OUT139", "FAB124"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/flick-knives",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Once per Turn Attack Reaction</strong> - 0: Target dagger you control that isn't on the active chain link deals 1 damage to target hero. If damage is dealt this way, the dagger has hit. Destroy the dagger.<br><br><strong>Blade Break</strong>",
+        "jp-JA": "<strong>ターンに1回アタックリアクション</strong> - 0:アクティブなチェインリンクにないあなたのコントロールするダガーを対象とし、それは1点のダメージをヒーローに与える。これによりダメージが与えられたなら、ダガーがヒットしたことになる。そのダガーを破壊する。<br><br><strong>Blade Break</strong><i>(コンバットチェインが閉じたときにこれでディフェンスしていたなら破壊する)</i>"
+      }
+    },
+    {
+      "name": "Nerve Scalpel",
+      "cardNumber": ["OUT005", "OUT006"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/nerve-scalpel",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Once per Turn Action</strong> - {R}{R}: <strong>Attack.</strong> <strong>Go again</strong><br><br><strong>Piercing 1</strong><i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more reaction cards this turn, those cards have -1{D} while defending.",
+        "jp-JA": "<strong>ターンに1回アクション</strong> - {R}{R}: <strong>アタック.</strong> <strong>Go again</strong><br><br><strong>Piercing 1</strong><i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上のリアクションアクションカードでディフェンされたとき、それらは-1{D}される。"
+      }
+    },
+    {
+      "name": "Scale Peeler",
+      "cardNumber": ["OUT009", "OUT010"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/scale-peeler",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Once per Turn Action</strong> - {R}{R}: <strong>Attack.</strong> <strong>Go again</strong><strong>Piercing 1</strong><i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more equipment this turn, those equipment have -1{D} while defending.",
+        "jp-JA": "<strong>ターンに1回アクション</strong> - {R}{R}: <strong>アタック.</strong> <strong>Go Again</strong><br><br><strong>Piercing 1</strong><i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上の装備でディフェンスされたとき、それらは-1{D}される。"
+      }
+    },
+    {
+      "name": "Spider's Bite",
+      "cardNumber": [
+        "ARA002",
+        "DYN115",
+        "DYN116",
+        "LGS111",
+        "OUT004",
+        "UZU002"
+      ],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/spiders-bite",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Once per Turn Action</strong> - {R}{R}: <strong>Attack.</strong> <strong>Go again</strong><strong>Piercing 1</strong><i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more attack action cards this turn, those cards have -1{D} while defending.",
+        "jp-JA": "<strong>ターンに1回アクション</strong> - {R}{R}: <strong>アタック.</strong> <strong>Go Again</strong><br><br><strong>Piercing 1</strong><i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上のアタックアクションカードでディフェンスされたとき、それらは-1{D}される。"
+      }
+    },
+    {
+      "name": "Already Dead",
+      "cardNumber": ["EVO236"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/already-dead-red",
+        "translationSource": "deepl"
+      },
+      "details": {
+        "en-US": "<strong>Contract</strong> - You are contracted to banish opponents' non-action cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck and a defending card.",
+        "jp-JA": "<strong>Contract</strong> - あなたは対戦相手のアクションでないカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、相手のデッキの一番上のカードと防御カード1枚を追放する。"
+      }
+    },
+    {
+      "name": "Censor",
+      "cardNumber": ["DTD226"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/censor-red",
+        "translationSource": "deepl"
+      },
+      "details": {
+        "en-US": "When this hits a hero, name a card. They can't play the named card until the end of their next turn.",
+        "jp-JA": "これがヒーローに当たったとき、カードを1枚指定する。そのヒーローは次のターンの終わりまでそのカードをプレイできない。"
+      }
+    },
+    {
+      "name": "Death Touch",
+      "cardNumber": ["FAB132", "OUT162", "UZU008"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/death-touch-red",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "Death Touch can't be played from hand.<br><br>When this hits a hero, create a Frailty, Inertia, or Bloodrot Pox token under their control.",
+        "jp-JA": "これは手札からプレイすることができない。<br><br>これがヒーローにヒットしたとき、そのコントロールの下で”Frailty”、”Inertia”、”Bloodrot Pox ”トークンのいずれか1つを生み出す。"
+      }
+    },
+    {
+      "name": "Leave No Witnesses",
+      "cardNumber": ["DYN120"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/leave-no-witnesses-red",
+        "translationSource": "deepl"
+      },
+      "details": {
+        "en-US": "<strong>Contract</strong> - You are contracted to banish opponents' red cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck and up to 1 card in their arsenal.",
+        "jp-JA": "<strong>Contract</strong> - あなたは対戦相手の赤のカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、そのヒーローのデッキの一番上のカードと、そのヒーローの武器庫にあるカード最大1枚を追放する。"
+      }
+    },
+    {
+      "name": "Shake Down",
+      "cardNumber": ["OUT013"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/shake-down-red",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "<strong>Uzuri Specialization</strong><br><br>If you've played or activated an attack reaction this chain link, Shake Down has \"When this hits a hero, choose red, yellow, or blue. They reveal their hand. Banish a card of the chosen color.\"",
+        "jp-JA": ""
+      }
+    },
+    {
+      "name": "Codex of Frailty",
+      "cardNumber": ["OUT160"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/codex-of-frailty-yellow",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "Each hero puts an attack action card from their graveyard face down into their arsenal. Each hero that does, discards a card.<br><br>Create a Ponder token under your control and a Frailty token under each opponent's control.<br><br><strong>Go again</strong>",
+        "jp-JA": "各プレイヤーは墓地からアタックアクションカードを裏向きでアーセナルに置く。そうしたプレイヤーは、手札を1枚捨てる。<br><br>”Ponder”トークンをあなたのコントロールで、”Frailty”トークンを対戦相手のコントロールで生み出す。<br><br><strong>Go Again</strong>"
+      }
+    },
+    {
+      "name": "Spreading Plague",
+      "cardNumber": ["OUT014"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/spreading-plague-yellow",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "Create X Bloodrot Pox tokens under the defending hero's control, where X is the number of defending cards this chain link.",
+        "jp-JA": "Bloodrot Pox トークンをX個ディフェンスプレイヤーのコントロールで作り出す、Xはこのチェインリンクでディフェンスに使用したカードの枚数である。"
+      }
+    },
+    {
+      "name": "Surgical Extraction",
+      "cardNumber": ["DYN122"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/surgical-extraction-blue",
+        "translationSource": "deepl"
+      },
+      "details": {
+        "en-US": "<strong>Contract</strong> - You are contracted to banish opponents' blue cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck, then look at their hand and banish a card.",
+        "jp-JA": "<strong>Contract</strong> - あなたは対戦相手の青のカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、相手のデッキの一番上のカードを追放し、その後相手の手札を見てカードを1枚追放する。"
+      }
+    },
+    {
+      "name": "Down and Dirty",
+      "cardNumber": ["OUT184"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/down-and-dirty-red",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "While Down and Dirty is in your arsenal, you may defend with it.",
+        "jp-JA": "これがアーセナルにあるなら、あなたはこれでディフェンスしてもよい。"
+      }
+    },
+    {
+      "name": "Erase Face",
+      "cardNumber": ["UPR187"],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/erase-face-red",
+        "translationSource": "deepl"
+      },
+      "details": {
+        "en-US": "When Erase Face hits a hero, cards and tokens they own lose all class and talent types until the end of their next turn.",
+        "jp-JA": "Erase Faceがヒーローに当たったとき、そのヒーローが所有しているカードとトークンは次のターンの終了時まですべてのクラスと才能のタイプを失う。"
+      }
+    },
+    {
+      "name": "Bloodrot Pox",
+      "cardNumber": [
+        "ARA027",
+        "AZL028",
+        "FAB113",
+        "LGS125",
+        "OUT234",
+        "RIP028",
+        "UZU028"
+      ],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/bloodrot-pox",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "At the beginning of your end phase, destroy Bloodrot Pox, then it deals 2 damage to you unless you pay {R}{R}{R}.",
+        "jp-JA": "あなたのエンドフェイズの開始時にこれを破壊する。<br><br>その後あなたが{R}{R}{R}を支払わない限り2点のダメージを与える。"
+      }
+    },
+    {
+      "name": "Frailty",
+      "cardNumber": [
+        "ARA028",
+        "AZL029",
+        "FAB134",
+        "LGS126",
+        "OUT235",
+        "RIP029",
+        "UZU029"
+      ],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/frailty",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "Your attack action cards played from arsenal and weapon attacks have -1{P}.<br><br>At the beginning of your end phase destroy Frailty.",
+        "jp-JA": "あなたのエンドフェイズの開始時にこれを破壊する。<br><br>アーセナルからプレイされたあなたのアタックアクションカードと武器でのアタックは-1{P}。"
+      }
+    },
+    {
+      "name": "Inertia",
+      "cardNumber": [
+        "ARA029",
+        "AZL030",
+        "FAB135",
+        "LGS127",
+        "OUT236",
+        "RIP030",
+        "UZU030"
+      ],
+      "translationInfo": {
+        "sourceText": "https://fabrary.net/cards/inertia",
+        "translationSource": "https://libraryoffab.com/?p=180"
+      },
+      "details": {
+        "en-US": "At the beginning of your end phase, destroy Inertia, then put all cards from your hand and arsenal on the bottom of your deck.",
+        "jp-JA": "あなたのエンドフェイズの開始時にこれを破壊する。<br><br>その後手札にあるすべてのカードとアーセナルに置かれているカードをデッキの下に置く。"
+      }
+    }
+  ]
+}

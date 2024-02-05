@@ -108,7 +108,3 @@ I needed an interactive bash terminal. Interactive as in when running things lik
 Install WSL following their docs - https://learn.microsoft.com/en-us/windows/wsl/install
 
 - You'll have to install `git`, `node` and `firebase-cli` in the WSL partition since WSL is separate from your Windows partition. Basically just install all those in the WSL terminal, following the Unix instructions of those tools.
-
-<strong>Uzuri Specialization<strong><i>(You may only have this in your deck if your hero is Uzuri)</i><br>If you've played or activated an attack reaction this chain link, Shake Down has "When this hits a hero, choose red, yellow, or blue. They reveal their hand. Banish a card of the chosen color."
-
-<strong>Uzuri Specialization</strong><i>(ヒーローがウズリでなければデッキに入れられない)</i><br>このチェインリンクでアタックリアクションがプレイ/アクティブになったならこれは「これがヒーローにヒットしたとき、赤・黄・青のいずれかを選ぶ。そのヒーローは手札を公開し、選ばれた色のカードを追放する」を得る。
