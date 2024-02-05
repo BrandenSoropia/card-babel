@@ -7,13 +7,41 @@ Here I'll log a list of TODOs, progress, discoveries, bugs/issues I ran into. I 
 
 It's been ~5months since I coded, plus it's my first time setting up Next and Firestore. Be gentle and learn slowly! (Try to not pull your hair out too!)
 
-<details>
+</details>
 
 **In chronological order**
 
+Key take aways
+
+- Why I decided to have unique documents per card and per colour (if applicable)
+  - [Ramblings-on-Document-Shape](#Ramblings-on-Document-Shape)
+  - [Conclusion-on-Document-Shape](#Conclusion-on-Document-Shape)
+
 ## 📜 History
 
+### February 5, 2024
+
+- ✅ Made sample card data json with formatted card text that should be parsable using Markdown.
+
+#### Conclusion on Document Shape
+
+**Part 2: Thoughts on How to Deal with Multiple Printings of the Same Card**
+
+I decided to have unique documents per card colour. This is because each colour has the same effect, but slightly weaker/stronger stat or effect depending on which colour it is. Also in the case that the there's a miss-print in a certain card colour, a change can be made directly.
+
+["Ravenous Rable" red](https://fabrary.net/cards/ravenous-rabble-red) vs [its yellow version](https://fabrary.net/cards/ravenous-rabble-yellow). It has the same effect, just that the red version has 1 more power than the yellow version.
+
+**Part 2: Thoughts on Using Card Number for Document Ids**
+
+I decided not to use card numbers as document ids. A card can be reprinted in different sets with the exact same name, colour, effect etc but since it's in a different set, I'd have duplicate copies of the same card in the database.
+
+Let's take a look again at ["Ravenous Rable" (red) is a good example.](https://fabrary.net/cards/ravenous-rabble-red) As of February 5, it has 5 reprintings. The cards are exactly the same, so it makes no sense to have unique docs.
+
 ### February 3, 2024
+
+- ✅ Better structure for data:
+  - ✅ How to store Flesh and Blood (and Digimon)?
+  - ✅ How should translations and cards look?
 
 #### Designing the Firestore "schema" (or basically how I'll be organizing and storing the data)
 
@@ -29,7 +57,7 @@ First off, there's lots of different platforms for Firebase and they each have t
 
 Next I learned how to get data from Firestore: you have to query them! I remember from my past work at Figure1, we used an older API that looked something like `myFirebaseApp.collection(...).getDoc(somePath).where(...)`. It seems that changed and we have something similar: `query(collection, constraint1, constraint2, ...)`. Read more about that here - https://firebase.google.com/docs/firestore/query-data/queries.
 
-#### Ramblings on "Schema" (Document Shape).
+#### Ramblings on Document Shape
 
 **Storing only Effect Text**
 I think a card's attribute, name, cost and etc. are the absolute basic knowledge a player needs to be able to know how to play/use cards. Thus I'm ignoring storing/translating all that and just caring about the card effect(s)/special requirement(s).
@@ -64,13 +92,10 @@ TBD on how to handle this!
 
 ## In Progress
 
-- Better structure for data:
-  - How to store Flesh and Blood (and Digimon)?
-  - How should translations and cards look?
+- Once decided, upload small subset of FaB Card data for testing
 
 ## TODOs
 
-- Once decided, upload small subset of FaB Card data for testing
 - Frontend: query by card ID/localized name
 - Frontend: Show said data
 - Learn how to scrape Library of FaB for JP translations
