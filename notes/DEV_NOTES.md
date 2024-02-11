@@ -19,6 +19,10 @@ Key take aways
 
 ## 📜 History
 
+### February 11, 2024
+
+- ✅ Upload small subset of FaB Card data for testing. Uploaded cards for the Uzuri list I use since I play that and often run into translations needs.
+
 ### February 5, 2024
 
 - ✅ Made sample card data json with formatted card text that should be parsable using Markdown.
@@ -92,11 +96,10 @@ TBD on how to handle this!
 
 ## In Progress
 
-- Once decided, upload small subset of FaB Card data for testing
+- Frontend: query by card ID/localized name
 
 ## TODOs
 
-- Frontend: query by card ID/localized name
 - Frontend: Show said data
 - Learn how to scrape Library of FaB for JP translations
 - Upload data for HVY, OUT

@@ -2,9 +2,10 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /games/fleshAndBlood/{document=**} {
-      allow read: if true;
-      allow write: if request.auth.uid == resource.data.owner_uid;
+    match /games/fleshAndBlood {
+      match /cards/{document=**} {
+        allow read: if true;
+      }
     }
   }
 }

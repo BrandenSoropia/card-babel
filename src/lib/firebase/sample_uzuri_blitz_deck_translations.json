@@ -4,7 +4,7 @@
       "name": "Uzuri",
       "cardNumber": ["HER076", "HER083", "OUT002", "UZU001"],
       "translationInfo": {
-        "sourceText": "    https://fabrary.net/cards/uzuri",
+        "sourceText": "https://fabrary.net/cards/uzuri",
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
@@ -36,7 +36,6 @@
         "jp-JA": "Blacktek Whisperersがあなたの墓地にある間、あなたのターンの開始時に、あなたはあなたがコントロールするSilverを2体破壊してもよい。そうした場合、Blacktek Whisperersを装備する。<br><br><strong>Attack Reaction</strong> - Blacktek Whisperersを破壊する： 対象のアサシンの攻撃アクションカードは \"これがヒーローにヒットしたとき、<strong>go again</strong>を得る\"。<br><br><strong>Battlworn</strong>"
       }
     },
-
     {
       "name": "Flick Knives",
       "cardNumber": ["OUT139", "FAB124"],
