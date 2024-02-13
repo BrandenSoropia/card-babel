@@ -19,6 +19,15 @@ Key take aways
 
 ## 📜 History
 
+### February 13, 2024
+
+- ✅ Frontend: query by card ID~~/localized name~~
+  - Unfortunately I found out that there isn't a way to query a document's field containing a substring... So that basically kills the plan to search by card name unless the user types the whole thing correctly. [StackOverflow for some interesting "hacks" and alternatives](https://stackoverflow.com/questions/46568142/google-firestore-query-on-substring-of-a-property-value-text-search)
+  - Basically this forces me to use card numbers only to get an MVP out. Otherwise I can use something like Elastic Search, but that that would take too much time and effort for a small project. It would be interesting to learn about though so I'll do some reading at least later!
+- ✅- Frontend: Show said data
+  - Made a super rough input, search and search result UI.
+  - Also added `markdown-to-jsx` to support styling/allow more flexibility rendering card details. I used this library before so I thought to use it again. Also it mentioned it's "lightweight", and without really checking other libraries other than `react-markdown`, it seems to be the only one claiming this? Lastly, `markdown-to-jsx` has more stars, so it probably is more battle tested!
+
 ### February 11, 2024
 
 - ✅ Upload small subset of FaB Card data for testing. Uploaded cards for the Uzuri list I use since I play that and often run into translations needs.
@@ -96,12 +105,21 @@ TBD on how to handle this!
 
 ## In Progress
 
-- Frontend: query by card ID/localized name
+- Add loading state
 
 ## TODOs
 
-- Frontend: Show said data
+- Add no matches found
+- Add error state
+- Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
+- Clean up code !!!
+- Frontend: Make super simple design
+- Setup styled system for consistency and practice making another design system
+- Setup basic unit tests for search card query
+- Write a Cypress test for searching card that succeeds and fails
+- Deploy to "staging" (if possible) and test if can actually connect not from localhost
+
+## Nice to haves/If I have the extra time and energy to learn
+
 - Learn how to scrape Library of FaB for JP translations
 - Upload data for HVY, OUT
-- Frontend: Make super simple design
-- Deploy to "staging" (if possible) and test if can actually connect not from localhost
