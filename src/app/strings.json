@@ -1,0 +1,11 @@
+{
+  "searchCardInputLabel": "Search by Card Number",
+  "searchResultsHeader": "Search Results:",
+  "getAllFABCardsButtonCTA": "Get all FaB Card Data",
+  "card": {
+    "translationHeader": {
+      "english": "English",
+      "japanese": "日本語"
+    }
+  }
+}
