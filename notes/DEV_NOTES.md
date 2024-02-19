@@ -19,6 +19,11 @@ Key take aways
 
 ## 📜 History
 
+### February 19, 2024
+
+- ✅ Added states for search result screen: initial state, loading and no matches found.
+  - I initially had loading, no matches and found matches all in one component. It is small enough now in this barebones version, but I didn't like how messy the render logic looked mixed with JSX. Thus a pulled each state into a tiny component. I think it's a little cleaner and also easier to style/customize this way!
+
 ### February 13, 2024
 
 - ✅ Frontend: query by card ID~~/localized name~~
@@ -105,11 +110,8 @@ TBD on how to handle this!
 
 ## In Progress
 
-- Add loading state
-
 ## TODOs
 
-- Add no matches found
 - Add error state
 - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
 - Clean up code !!!

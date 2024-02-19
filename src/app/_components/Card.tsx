@@ -1,6 +1,6 @@
 import Markdown from "markdown-to-jsx";
 import { FABCard } from "@/lib/firebase/documents.types";
-import strings from "./strings.json";
+import strings from "../strings.json";
 import React from "react";
 
 const Card = ({ name, cardNumber, details, translationInfo }: FABCard) => {

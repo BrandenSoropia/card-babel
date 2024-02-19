@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import CardSearch from "./CardSearch";
-import {} from "@/lib/firebase/queries";
+import CardSearch from "./_components/CardSearch";
 
 export default function Home() {
   return (

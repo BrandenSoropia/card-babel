@@ -1,6 +1,22 @@
 {
-  "searchCardInputLabel": "Search by Card Number",
-  "searchResultsHeader": "Search Results:",
+  "searchScreen": {
+    "form": {
+      "cardNumberInputLabel": "Search by Card Number",
+      "searchCTA": "Search Card",
+      "clearCTA": "Clear search text"
+    },
+    "results": {
+      "searchResultsHeader": "Search Results:"
+    }
+  },
+  "initialSearchSuggestion": {
+    "label": "Search a card by its card number found in the bottom right corner of the card.\n\nFor example, to search \"Uzuri, Switchblade\", you can enter any of the following card numbers: \"HER077\", \"OUT001\", \"WIN021\"."
+  },
+  "loading": { "header": "Searching for cards..." },
+  "noSearchResult": {
+    "header": "No results found.",
+    "suggestion": "Please check the card number is correct. Otherwise the card currently isn't added, please notify project owner."
+  },
   "getAllFABCardsButtonCTA": "Get all FaB Card Data",
   "card": {
     "translationHeader": {
