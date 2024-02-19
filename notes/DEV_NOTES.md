@@ -23,6 +23,7 @@ Key take aways
 
 - ✅ Added states for search result screen: initial state, loading and no matches found.
   - I initially had loading, no matches and found matches all in one component. It is small enough now in this barebones version, but I didn't like how messy the render logic looked mixed with JSX. Thus a pulled each state into a tiny component. I think it's a little cleaner and also easier to style/customize this way!
+- Extra! Found out about [Next's project organization convention](https://nextjs.org/docs/app/building-your-application/routing/colocation#project-organization-features): one can separate UI folders by prefixing a folder name with an underscore (`_`). Thus, the card search code has been moved into `_card-search`.
 
 ### February 13, 2024
 
@@ -110,9 +111,10 @@ TBD on how to handle this!
 
 ## In Progress
 
+- Add error state
+
 ## TODOs
 
-- Add error state
 - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
 - Clean up code !!!
 - Frontend: Make super simple design
