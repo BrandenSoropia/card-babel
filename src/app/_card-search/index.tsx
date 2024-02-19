@@ -46,6 +46,7 @@ const CardSearch = () => {
     undefined
   );
   const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -60,12 +61,18 @@ const CardSearch = () => {
   };
 
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
+    try {
+      e.preventDefault();
+      setIsLoading(true);
 
-    const results = await getCardSearchResults(searchText);
-    setSearchResults(results);
-    setIsLoading(false);
+      const results = await getCardSearchResults(searchText);
+      setSearchResults(results);
+      setIsLoading(false);
+    } catch (e) {
+      setErrorMessage(
+        "Something happened search for that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
+      );
+    }
   };
 
   return (

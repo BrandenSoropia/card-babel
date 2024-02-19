@@ -69,41 +69,29 @@ export const isSearchTextValidFABCardNumber = (searchText: string) => {
 export const getCardSearchResults = async (
   searchText: string
 ): Promise<FABCard[]> => {
-  try {
-    if (!isSearchTextValidFABCardNumber(searchText)) {
-      throw Error(
-        'Text is invalid. Card Number should be 6 characters total with starting with 3 letters then 3 numbers. \n For example: "DYN122".'
-      );
-    }
-    const formattedSearchText = searchText.toUpperCase();
-
-    const querySnap = await getDocs(
-      query(
-        fabCardsCollection,
-        where("cardNumber", "array-contains", formattedSearchText)
-      )
+  if (!isSearchTextValidFABCardNumber(searchText)) {
+    throw Error(
+      'Text is invalid. Card Number should be 6 characters total with starting with 3 letters then 3 numbers. \n For example: "DYN122".'
     );
-
-    if (!querySnap.empty) {
-      console.log("### Matches", querySnap);
-
-      return querySnap.docs.map((docSnap) => {
-        console.log(docSnap.data());
-
-        return docSnap.data() as unknown as FABCard;
-      });
-    }
-
-    return [];
-  } catch (e) {
-    console.log("### Error attempting to search for card", e);
-
-    /**
-     * If I don't do this, I'd have to add `undefined` as a possible return value in the promise.
-     *
-     * I think if something errors out, I'd rather not break the search results so returning an empty
-     * list should be okay?
-     */
-    return [];
   }
+  const formattedSearchText = searchText.toUpperCase();
+
+  const querySnap = await getDocs(
+    query(
+      fabCardsCollection,
+      where("cardNumber", "array-contains", formattedSearchText)
+    )
+  );
+
+  if (!querySnap.empty) {
+    console.log("### Matches", querySnap);
+
+    return querySnap.docs.map((docSnap) => {
+      console.log(docSnap.data());
+
+      return docSnap.data() as unknown as FABCard;
+    });
+  }
+
+  return [];
 };

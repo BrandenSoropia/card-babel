@@ -24,6 +24,8 @@ Key take aways
 - ✅ Added states for search result screen: initial state, loading and no matches found.
   - I initially had loading, no matches and found matches all in one component. It is small enough now in this barebones version, but I didn't like how messy the render logic looked mixed with JSX. Thus a pulled each state into a tiny component. I think it's a little cleaner and also easier to style/customize this way!
 - Extra! Found out about [Next's project organization convention](https://nextjs.org/docs/app/building-your-application/routing/colocation#project-organization-features): one can create private folders that are not treated as routes by prefixing a folder name with an underscore (`_`). For my use, I want to have separate UI folders, thus, the card search code has been moved into `_card-search`.
+- I realized I haven't really written much error handling! Before this update, I had a try/catch wrapping the `getCardSearchResults` Firebase query that actually silenced all errors and didn't really have a way to notify UI with something helpful to show the user. (I think it would be fine to rethrow any errors found, if I wanted to process/log the error before.) Now I'll move the try/catch to the function calling the API call instead, that way the UI can hopefully notice the error and show something useful to the user. All of this comes from a useful StackOverflow - https://stackoverflow.com/a/42171508.
+- Also realized how out of practice I am with React essentials like hooks. I really am glad to be working on this a bit more.
 
 ### February 13, 2024
 
@@ -112,6 +114,7 @@ TBD on how to handle this!
 ## In Progress
 
 - Add error state
+- Create toast system using context to handle and display error messages from anywhere. This is a good way to practice using React context.
 
 ## TODOs
 
