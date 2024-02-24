@@ -84,11 +84,7 @@ export const getCardSearchResults = async (
   );
 
   if (!querySnap.empty) {
-    console.log("### Matches", querySnap);
-
     return querySnap.docs.map((docSnap) => {
-      console.log(docSnap.data());
-
       return docSnap.data() as unknown as FABCard;
     });
   }
