@@ -15,11 +15,13 @@ const NotificationFactory: React.FC<React.PropsWithChildren> = ({
     setNotification(null);
   };
 
+  console.log("### NotificationFactory rendered!");
+
   return (
     <div>
       {notification && (
         <div>
-          {notification.message}
+          {notification.message || strings.genericMessages[notification.type]}
           <button onSubmit={clearNotification}>
             {strings.clearNotificationAltText}
           </button>

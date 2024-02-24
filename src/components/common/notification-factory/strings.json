@@ -1,6 +1,6 @@
 {
   "clearNotificationAltText": "Clear Notification",
   "genericMessages": {
-    "error": "Something went wrong, please refresh the page and try again. If the problem occurs, please contact the project owner."
+    "ERROR": "Something went wrong, please refresh the page and try again. If the problem occurs, please contact the project owner."
   }
 }

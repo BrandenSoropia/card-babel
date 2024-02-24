@@ -19,6 +19,13 @@ Key take aways
 
 ## 📜 History
 
+### February 24, 2024
+
+- ✅ Create toast system using context to handle and display error messages from anywhere. This is a good way to practice using React context.
+  - Used `enum` for notification message type and previously just thought it was a simpler way of creating constants with extra features. Today I learned they have a some nifty usage in Typescript: I can use them to constrict types unlike if I used regular variables (like `const ERROR = "ERROR"` etc.). Read it here - https://www.typescriptlang.org/docs/handbook/enums.html#string-enums
+- Extra learnings:
+  - [How to visually hide button text but leave it available for screen readers.](https://gomakethings.com/hidden-content-for-better-a11y/#hiding-the-link)
+
 ### February 19, 2024
 
 - ✅ Added states for search result screen: initial state, loading and no matches found.
@@ -113,11 +120,12 @@ TBD on how to handle this!
 
 ## In Progress
 
-- Add error state
-- Create toast system using context to handle and display error messages from anywhere. This is a good way to practice using React context.
+- Figure out how to stop re-rendering if Notification context is updated
+  - [Read simple explanation, then there's a detailed example linked](https://stackoverflow.com/a/65639153)
 
 ## TODOs
 
+- Add error state
 - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
 - Clean up code !!!
 - Frontend: Make super simple design

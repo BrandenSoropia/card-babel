@@ -9,6 +9,7 @@ import Card from "./Card";
 import Loading from "./Loading";
 import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
+import TestNotificationButton from "./TestNotificationButton";
 
 const renderSearchResults = ({
   isLoading,
@@ -46,8 +47,6 @@ const CardSearch = () => {
     undefined
   );
   const [isLoading, setIsLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-  const { notification, setNotification } = useContext;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -70,11 +69,13 @@ const CardSearch = () => {
       setSearchResults(results);
       setIsLoading(false);
     } catch (e) {
-      setErrorMessage(
-        "Something happened search for that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
+      console.log(
+        "### Something happened search for that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
       );
     }
   };
+
+  console.log("### CardSearch rendered!");
 
   return (
     <section>
@@ -100,6 +101,7 @@ const CardSearch = () => {
         <button onClick={handleSubmit}>
           {strings.searchScreen.form.searchCTA}
         </button>
+        <TestNotificationButton />
       </form>
       <div>{renderSearchResults({ searchResults, isLoading })}</div>
     </section>

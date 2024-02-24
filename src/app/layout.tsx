@@ -19,7 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NotificationFactoryProvider>
-          <NotificationFactory>{children}</NotificationFactory>
+          <NotificationFactory />
+          {children}
         </NotificationFactoryProvider>
       </body>
     </html>
