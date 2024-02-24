@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import strings from "../strings.json";
 import {
   getAllFabCardData,
@@ -47,6 +47,7 @@ const CardSearch = () => {
   );
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const { notification, setNotification } = useContext;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
