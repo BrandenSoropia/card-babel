@@ -9,7 +9,8 @@ const TestNotificationButton = () => {
 
   return (
     <button
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         setNotification({ type: NOTIFICATION_TYPES.ERROR });
       }}
     >

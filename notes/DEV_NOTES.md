@@ -122,6 +122,7 @@ TBD on how to handle this!
 
 - Figure out how to stop re-rendering if Notification context is updated
   - [Read simple explanation, then there's a detailed example linked](https://stackoverflow.com/a/65639153)
+  - Solution: `e.preventDefault()` needed in the `<button onClick={...} />`! After all these years, I never really checked exactly what "default" was prevented: for buttons in forms, the default action is to submit form and refresh the page! [Source](https://bobbyhadz.com/blog/react-prevent-page-refresh-on-form-submit).
 
 ## TODOs
 
