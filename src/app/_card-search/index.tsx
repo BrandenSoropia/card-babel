@@ -63,9 +63,13 @@ const CardSearch = () => {
     setSearchText("");
   };
 
-  const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault();
+      if (!!searchResults?.length) {
+        setSearchResults([]);
+      }
+
       setIsLoading(true);
 
       const results = await getCardSearchResults(searchText);
@@ -76,12 +80,14 @@ const CardSearch = () => {
         type: NOTIFICATION_TYPES.ERROR,
         message: strings.searchScreen.form.errors.search,
       });
+
+      setIsLoading(false);
     }
   };
 
   return (
     <section>
-      <form>
+      <form onSubmit={handleSubmit}>
         <button onClick={getAllFabCardData}>
           {strings.getAllFABCardsButtonCTA}
         </button>
@@ -97,12 +103,10 @@ const CardSearch = () => {
           placeholder="DYN122"
           value={searchText}
         />
-        <button onClick={clearSearchText}>
+        <button type="button" onClick={clearSearchText}>
           {strings.searchScreen.form.clearCTA}
         </button>
-        <button onClick={handleSubmit}>
-          {strings.searchScreen.form.searchCTA}
-        </button>
+        <button type="submit">{strings.searchScreen.form.searchCTA}</button>
         <TestNotificationButton />
       </form>
       <div>{renderSearchResults({ searchResults, isLoading })}</div>
