@@ -3,7 +3,10 @@
     "form": {
       "cardNumberInputLabel": "Search by Card Number",
       "searchCTA": "Search Card",
-      "clearCTA": "Clear search text"
+      "clearCTA": "Clear search text",
+      "errors": {
+        "search": "An error occured trying to find that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
+      }
     },
     "results": {
       "searchResultsHeader": "Search Results:"

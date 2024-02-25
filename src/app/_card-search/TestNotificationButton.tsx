@@ -3,7 +3,6 @@ import {
   NOTIFICATION_TYPES,
 } from "@/components/common/notification-factory";
 
-// TODO: Figure out why updates to Notification system are re-rendering everything.
 const TestNotificationButton = () => {
   const { setNotification } = useNotificationFactoryContext();
 

@@ -1,28 +1,24 @@
 "use client";
 
-import React, { useContext } from "react";
-import { NotificationFactoryContext } from "./hooks/notification-factory-context";
 import strings from "./strings.json";
+import useNotificationFactoryContext from "./hooks/useNotificationFactoryContext";
 
 const NotificationFactory: React.FC<React.PropsWithChildren> = ({
   children,
 }) => {
-  const { notification, setNotification } = useContext(
-    NotificationFactoryContext
-  );
+  const { notification, setNotification } = useNotificationFactoryContext();
 
-  const clearNotification = () => {
+  const clearNotification = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     setNotification(null);
   };
-
-  console.log("### NotificationFactory rendered!");
 
   return (
     <div>
       {notification && (
         <div>
           {notification.message || strings.genericMessages[notification.type]}
-          <button onSubmit={clearNotification}>
+          <button onClick={clearNotification}>
             {strings.clearNotificationAltText}
           </button>
         </div>

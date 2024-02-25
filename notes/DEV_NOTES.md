@@ -19,6 +19,13 @@ Key take aways
 
 ## 📜 History
 
+### February 25, 2024
+
+- ✅ Figure out how to stop re-rendering if Notification context is updated
+  - [Read simple explanation, then there's a detailed example linked](https://stackoverflow.com/a/65639153)
+  - Solution: `e.preventDefault()` needed in the `<button onClick={...} />`! After all these years, I never really checked exactly what "default" was prevented: for buttons in forms, the default action is to submit form and refresh the page! [Source](https://bobbyhadz.com/blog/react-prevent-page-refresh-on-form-submit).
+- ✅ Add error seraching for card state
+
 ### February 24, 2024
 
 - ✅ Create toast system using context to handle and display error messages from anywhere. This is a good way to practice using React context.
@@ -120,13 +127,8 @@ TBD on how to handle this!
 
 ## In Progress
 
-- Figure out how to stop re-rendering if Notification context is updated
-  - [Read simple explanation, then there's a detailed example linked](https://stackoverflow.com/a/65639153)
-  - Solution: `e.preventDefault()` needed in the `<button onClick={...} />`! After all these years, I never really checked exactly what "default" was prevented: for buttons in forms, the default action is to submit form and refresh the page! [Source](https://bobbyhadz.com/blog/react-prevent-page-refresh-on-form-submit).
-
 ## TODOs
 
-- Add error state
 - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
 - Clean up code !!!
 - Frontend: Make super simple design

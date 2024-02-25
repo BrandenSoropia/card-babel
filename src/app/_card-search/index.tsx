@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react";
-import strings from "../strings.json";
+import React, { useState } from "react";
+import strings from "./strings.json";
 import {
   getAllFabCardData,
   getCardSearchResults,
@@ -10,6 +10,7 @@ import Loading from "./Loading";
 import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
+import { useNotificationFactoryContext } from "@/components/common/notification-factory";
 
 const renderSearchResults = ({
   isLoading,
@@ -47,6 +48,8 @@ const CardSearch = () => {
     undefined
   );
   const [isLoading, setIsLoading] = useState(false);
+  const { setNotification, NOTIFICATION_TYPES } =
+    useNotificationFactoryContext();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -69,13 +72,12 @@ const CardSearch = () => {
       setSearchResults(results);
       setIsLoading(false);
     } catch (e) {
-      console.log(
-        "### Something happened search for that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
-      );
+      setNotification({
+        type: NOTIFICATION_TYPES.ERROR,
+        message: strings.searchScreen.form.errors.search,
+      });
     }
   };
-
-  console.log("### CardSearch rendered!");
 
   return (
     <section>
