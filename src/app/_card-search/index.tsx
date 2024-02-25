@@ -10,7 +10,7 @@ import Loading from "./Loading";
 import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
-import { useNotificationFactoryContext } from "@/components/common/notification-factory";
+import { useNotificationFactoryContext } from "@/components/notification-factory";
 
 const renderSearchResults = ({
   isLoading,

@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import NotificationFactoryProvider from "../components/common/notification-factory/NotificationFactoryProvider";
-import NotificationFactory from "../components/common/notification-factory/NotificationFactory";
+import NotificationFactoryProvider from "../components/notification-factory/NotificationFactoryProvider";
+import NotificationFactory from "../components/notification-factory/NotificationFactory";
 
 const inter = Inter({ subsets: ["latin"] });
 

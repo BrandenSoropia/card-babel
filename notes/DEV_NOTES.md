@@ -127,14 +127,16 @@ TBD on how to handle this!
 
 ## In Progress
 
+- Frontend: Make super simple design
+
 ## TODOs
 
-- Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
-- Clean up code !!!
-- Frontend: Make super simple design
 - Setup styled system for consistency and practice making another design system
 - Setup basic unit tests for search card query
 - Write a Cypress test for searching card that succeeds and fails
+- 🐛 Bugs to Fix:
+  - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
+- Clean up code !!!
 - Deploy to "staging" (if possible) and test if can actually connect not from localhost
 
 ## Nice to haves/If I have the extra time and energy to learn

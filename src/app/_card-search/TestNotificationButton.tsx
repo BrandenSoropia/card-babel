@@ -1,7 +1,7 @@
 import {
   useNotificationFactoryContext,
   NOTIFICATION_TYPES,
-} from "@/components/common/notification-factory";
+} from "@/components/notification-factory";
 
 const TestNotificationButton = () => {
   const { setNotification } = useNotificationFactoryContext();
