@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import strings from "./strings.json";
 import {
   getAllFabCardData,
@@ -11,6 +13,7 @@ import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
 import { useNotificationFactoryContext } from "@/components/notification-factory";
+import { Flex } from "theme-ui";
 
 const renderSearchResults = ({
   isLoading,
@@ -86,31 +89,43 @@ const CardSearch = () => {
   };
 
   return (
-    <section>
+    // TODO: Figure out why "padding" is making TS mad
+    <Flex
+      sx={{
+        flexDirection: "column",
+        background: "mustard",
+      }}
+    >
       <form onSubmit={handleSubmit}>
-        <button onClick={getAllFabCardData}>
-          {strings.getAllFABCardsButtonCTA}
-        </button>
-        <label htmlFor="cardSearchText">
-          {strings.searchScreen.form.cardNumberInputLabel}
-        </label>
-        <input
-          type="text"
-          id="cardSearchText"
-          name="cardSearchText"
-          onChange={handleChange}
-          maxLength={128}
-          placeholder="DYN122"
-          value={searchText}
-        />
-        <button type="button" onClick={clearSearchText}>
-          {strings.searchScreen.form.clearCTA}
-        </button>
-        <button type="submit">{strings.searchScreen.form.searchCTA}</button>
-        <TestNotificationButton />
+        <Flex
+          sx={{
+            flexDirection: "column",
+          }}
+        >
+          <button onClick={getAllFabCardData}>
+            {strings.getAllFABCardsButtonCTA}
+          </button>
+          <label htmlFor="cardSearchText">
+            {strings.searchScreen.form.cardNumberInputLabel}
+          </label>
+          <input
+            type="text"
+            id="cardSearchText"
+            name="cardSearchText"
+            onChange={handleChange}
+            maxLength={128}
+            placeholder="DYN122"
+            value={searchText}
+          />
+          <button type="button" onClick={clearSearchText}>
+            {strings.searchScreen.form.clearCTA}
+          </button>
+          <button type="submit">{strings.searchScreen.form.searchCTA}</button>
+          <TestNotificationButton />
+        </Flex>
       </form>
       <div>{renderSearchResults({ searchResults, isLoading })}</div>
-    </section>
+    </Flex>
   );
 };
 

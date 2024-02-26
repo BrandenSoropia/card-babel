@@ -19,6 +19,13 @@ Key take aways
 
 ## 📜 History
 
+### February 26, 2024
+
+- ✅ Installed `theme-ui` and `emotion` for design system architecting
+  - Also found out the old library I used to use for theming, `styled-system`, is no longer supported! This took a while to figure out, I am embarrassed haha. Amazingly, `theme-ui` is much more convenient since it comes with common components like `Flex` and `Button` so I don't have to manually rebuild the primitive components each time!
+  - Also trying to do some a11y font work for the first time: using `rems` instead of `px`. It's a little weird looking but makes sense. [Read about them here](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
+    - Also because of using `theme-ui`, I learned a little about how JSX is transpiled to js. You can "extend" the JSX transpiler to recognize custom props, and that's how `theme-ui` transpiles the `sx` prop into styles using your theme values. [Explanation here](https://theme-ui.com/guides/jsx-pragma)
+
 ### February 25, 2024
 
 - ✅ Figure out how to stop re-rendering if Notification context is updated
@@ -128,6 +135,9 @@ TBD on how to handle this!
 ## In Progress
 
 - Frontend: Make super simple design
+  - Make box, input, button, text
+  - Replace usages within app
+  - define colour system for light theme
 
 ## TODOs
 
