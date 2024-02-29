@@ -135,6 +135,7 @@ TBD on how to handle this!
 ## In Progress
 
 - Frontend: Make super simple design
+  - Taking inspiration from this design: https://dribbble.com/shots/23630207-Women-s-fashion-app
   - Make box, input, button, text
   - Replace usages within app
   - define colour system for light theme

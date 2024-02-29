@@ -24,6 +24,7 @@ const theme = {
     mustard: "#FCA311",
     navy: "#14213D",
   },
+  // Components
   buttons: {
     primary: {
       color: "white",
@@ -34,8 +35,10 @@ const theme = {
       bg: "white",
     },
   },
+  input: {
+    fontSize: 1,
+    backgroundColor: "black",
+  },
 };
-
-// Aliases
 
 export default theme;

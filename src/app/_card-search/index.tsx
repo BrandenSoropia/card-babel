@@ -13,7 +13,7 @@ import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
 import { useNotificationFactoryContext } from "@/components/notification-factory";
-import { Box, Flex } from "theme-ui";
+import { Flex, Input } from "theme-ui";
 
 const renderSearchResults = ({
   isLoading,
@@ -108,7 +108,7 @@ const CardSearch = () => {
         <label htmlFor="cardSearchText">
           {strings.searchScreen.form.cardNumberInputLabel}
         </label>
-        <input
+        <Input
           type="text"
           id="cardSearchText"
           name="cardSearchText"
