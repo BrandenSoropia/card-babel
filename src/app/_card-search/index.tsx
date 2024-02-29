@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import strings from "./strings.json";
 import {
   getAllFabCardData,
@@ -13,7 +13,7 @@ import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
 import { useNotificationFactoryContext } from "@/components/notification-factory";
-import { Flex } from "theme-ui";
+import { Box, Flex } from "theme-ui";
 
 const renderSearchResults = ({
   isLoading,
@@ -66,7 +66,7 @@ const CardSearch = () => {
     setSearchText("");
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent) => {
     try {
       e.preventDefault();
       if (!!searchResults?.length) {
@@ -89,41 +89,40 @@ const CardSearch = () => {
   };
 
   return (
-    // TODO: Figure out why "padding" is making TS mad
     <Flex
       sx={{
         flexDirection: "column",
         background: "mustard",
       }}
     >
-      <form onSubmit={handleSubmit}>
-        <Flex
-          sx={{
-            flexDirection: "column",
-          }}
-        >
-          <button onClick={getAllFabCardData}>
-            {strings.getAllFABCardsButtonCTA}
-          </button>
-          <label htmlFor="cardSearchText">
-            {strings.searchScreen.form.cardNumberInputLabel}
-          </label>
-          <input
-            type="text"
-            id="cardSearchText"
-            name="cardSearchText"
-            onChange={handleChange}
-            maxLength={128}
-            placeholder="DYN122"
-            value={searchText}
-          />
-          <button type="button" onClick={clearSearchText}>
-            {strings.searchScreen.form.clearCTA}
-          </button>
-          <button type="submit">{strings.searchScreen.form.searchCTA}</button>
-          <TestNotificationButton />
-        </Flex>
-      </form>
+      <Flex
+        as="form"
+        sx={{
+          flexDirection: "column",
+        }}
+        onSubmit={handleSubmit}
+      >
+        <button onClick={getAllFabCardData}>
+          {strings.getAllFABCardsButtonCTA}
+        </button>
+        <label htmlFor="cardSearchText">
+          {strings.searchScreen.form.cardNumberInputLabel}
+        </label>
+        <input
+          type="text"
+          id="cardSearchText"
+          name="cardSearchText"
+          onChange={handleChange}
+          maxLength={128}
+          placeholder="DYN122"
+          value={searchText}
+        />
+        <button type="button" onClick={clearSearchText}>
+          {strings.searchScreen.form.clearCTA}
+        </button>
+        <button type="submit">{strings.searchScreen.form.searchCTA}</button>
+        <TestNotificationButton />
+      </Flex>
       <div>{renderSearchResults({ searchResults, isLoading })}</div>
     </Flex>
   );
