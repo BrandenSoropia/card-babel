@@ -108,3 +108,10 @@ I needed an interactive bash terminal. Interactive as in when running things lik
 Install WSL following their docs - https://learn.microsoft.com/en-us/windows/wsl/install
 
 - You'll have to install `git`, `node` and `firebase-cli` in the WSL partition since WSL is separate from your Windows partition. Basically just install all those in the WSL terminal, following the Unix instructions of those tools.
+
+## Thanks
+
+I used some free stuff to build this, so I wanted to mention them here:
+
+- Design inspired by: https://dribbble.com/shots/23630207-Women-s-fashion-app
+- Icons: https://iconduck.com/icons/313724/search

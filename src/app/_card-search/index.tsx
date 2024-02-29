@@ -1,3 +1,4 @@
+/** @jsxImportSource theme-ui */
 "use client";
 
 import { FormEvent, useState } from "react";
@@ -13,7 +14,10 @@ import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
 import { useNotificationFactoryContext } from "@/components/notification-factory";
-import { Flex, Input } from "theme-ui";
+import { Box, Button, Flex, Input, useThemeUI } from "theme-ui";
+import Image from "next/image";
+import IconMagnifyingGlass from "/public/magnifying_glass.icon.svg";
+import IconX from "/public/x.icon.svg";
 
 const renderSearchResults = ({
   isLoading,
@@ -53,6 +57,7 @@ const CardSearch = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { setNotification, NOTIFICATION_TYPES } =
     useNotificationFactoryContext();
+  const { theme } = useThemeUI();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -92,7 +97,6 @@ const CardSearch = () => {
     <Flex
       sx={{
         flexDirection: "column",
-        background: "mustard",
       }}
     >
       <Flex
@@ -108,18 +112,57 @@ const CardSearch = () => {
         <label htmlFor="cardSearchText">
           {strings.searchScreen.form.cardNumberInputLabel}
         </label>
-        <Input
-          type="text"
-          id="cardSearchText"
-          name="cardSearchText"
-          onChange={handleChange}
-          maxLength={128}
-          placeholder="DYN122"
-          value={searchText}
-        />
-        <button type="button" onClick={clearSearchText}>
-          {strings.searchScreen.form.clearCTA}
-        </button>
+        <Box
+          sx={{
+            position: "relative",
+          }}
+        >
+          <Image
+            sx={{
+              position: "absolute",
+              top: 2,
+              left: 2,
+            }}
+            src={IconMagnifyingGlass}
+            height={24}
+            width={24}
+            alt={strings.searchScreen.form.searchCTA}
+          />
+          <Input
+            sx={{
+              paddingLeft: 4,
+            }}
+            variant="pill"
+            type="text"
+            id="cardSearchText"
+            name="cardSearchText"
+            onChange={handleChange}
+            maxLength={128}
+            placeholder={strings.searchScreen.form.searchCTA}
+            value={searchText}
+          />
+          {/* TODO: Fix button */}
+          {!!searchText && (
+            <Button
+              sx={{
+                position: "absolute",
+                top: 2,
+                right: 2,
+                zIndex: 1,
+              }}
+              type="button"
+              onClick={clearSearchText}
+            >
+              <Image
+                src={IconX}
+                height={24}
+                width={24}
+                alt={strings.searchScreen.form.clearCTA}
+              />
+            </Button>
+          )}
+        </Box>
+
         <button type="submit">{strings.searchScreen.form.searchCTA}</button>
         <TestNotificationButton />
       </Flex>

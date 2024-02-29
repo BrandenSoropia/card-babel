@@ -2,8 +2,8 @@
   "searchScreen": {
     "form": {
       "cardNumberInputLabel": "Search by Card Number",
-      "searchCTA": "Search Card",
-      "clearCTA": "Clear search text",
+      "searchCTA": "Search By Card Number (ex: DYN122)",
+      "clearCTA": "Clear search critera",
       "errors": {
         "search": "An error occured trying to find that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
       }
