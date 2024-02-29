@@ -1,12 +1,17 @@
 "use client";
 
-import styles from "./page.module.css";
+import { Box } from "theme-ui";
 import CardSearch from "./_card-search";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <Box
+      as="main"
+      sx={{
+        padding: 0,
+      }}
+    >
       <CardSearch />
-    </main>
+    </Box>
   );
 }

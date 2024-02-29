@@ -9,7 +9,7 @@ const _48px = "2.5rem";
 const _64px = "4rem";
 
 const theme = {
-  root: { maxWidth: "100vw", overflowX: "hidden" },
+  styles: { root: { maxWidth: "100vw", overflowX: "hidden" } },
   fontSizes: [_8px, _16px, _24px, _32px, _48px, _64px],
   fontWeights: {
     body: 400,
