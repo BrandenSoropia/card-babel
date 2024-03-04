@@ -54,6 +54,9 @@ const theme = makeTheme({
       color: "black",
       bg: "white",
     },
+    clear: {
+      backgroundColor: "transparent",
+    },
   },
   forms: {
     pill: {

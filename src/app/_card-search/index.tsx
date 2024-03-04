@@ -14,10 +14,11 @@ import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import TestNotificationButton from "./TestNotificationButton";
 import { useNotificationFactoryContext } from "@/components/notification-factory";
-import { Box, Button, Flex, Input, useThemeUI } from "theme-ui";
+import { Box, Button, Flex, Input } from "theme-ui";
+import { useTheme } from "@/components/design-system";
 import Image from "next/image";
-import IconMagnifyingGlass from "/public/magnifying_glass.icon.svg";
-import IconX from "/public/x.icon.svg";
+import IconMagnifyingGlass from "@/icons/MagnifyingGlass.icon";
+import IconX from "@/icons/X.icon";
 
 const renderSearchResults = ({
   isLoading,
@@ -57,7 +58,7 @@ const CardSearch = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { setNotification, NOTIFICATION_TYPES } =
     useNotificationFactoryContext();
-  const { theme } = useThemeUI();
+  const { theme } = useTheme();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
@@ -117,17 +118,20 @@ const CardSearch = () => {
             position: "relative",
           }}
         >
-          <Image
+          <Box
             sx={{
               position: "absolute",
               top: 2,
               left: 2,
             }}
-            src={IconMagnifyingGlass}
-            height={24}
-            width={24}
-            alt={strings.searchScreen.form.searchCTA}
-          />
+          >
+            <IconMagnifyingGlass
+              stroke={theme.colors.white}
+              height={24}
+              width={24}
+              title={strings.searchScreen.form.searchCTA}
+            />
+          </Box>
           <Input
             sx={{
               paddingLeft: 4,
@@ -141,23 +145,24 @@ const CardSearch = () => {
             placeholder={strings.searchScreen.form.searchCTA}
             value={searchText}
           />
-          {/* TODO: Fix button */}
           {!!searchText && (
             <Button
+              variant="clear"
               sx={{
                 position: "absolute",
                 top: 2,
                 right: 2,
                 zIndex: 1,
+                padding: 0,
               }}
               type="button"
               onClick={clearSearchText}
             >
-              <Image
-                src={IconX}
+              <IconX
+                stroke={theme.colors.white}
                 height={24}
                 width={24}
-                alt={strings.searchScreen.form.clearCTA}
+                title={strings.searchScreen.form.clearCTA}
               />
             </Button>
           )}
