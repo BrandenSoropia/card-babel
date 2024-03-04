@@ -134,11 +134,25 @@ TBD on how to handle this!
 
 ## In Progress
 
+### February 29, 2024
+
 - Frontend: Make super simple design
   - Taking inspiration from this design: https://dribbble.com/shots/23630207-Women-s-fashion-app
   - Icons sourced from - https://iconduck.com/icons/313724/search
     - Interesting read of using CSS `filter` to change an SVG's fill colour - https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991#43960991
       - Decided to follow it since it seems faster than converting them to components which bundles them into the code and makes that bigger! Seems `next/image` also support SVGs enough! Performance notes - https://javascript.plainenglish.io/analysis-of-svg-component-usage-in-react-and-its-impact-on-build-size-cbf72668d15a
+
+### March 4, 2023
+
+- Learned more about SVGs
+
+  - a11y Notes:
+    - I should add alt text for SVG's that have function/important info to a user, (like clicking it will close something etc). https://css-tricks.com/accessible-svgs/#aa-2-inline-svg
+  - Optimization:
+
+    - Using SVGR to optimize and convert SVGs to React components.
+      - I realize since I don't have too many SVGs and also want to simplicity of coloring icons through props, I decided to just use SVGs via components. https://react-svgr.com/docs/what-is-svgr/
+
   - Replace usages within app
   - define colour system for main theme
 

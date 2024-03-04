@@ -24,6 +24,7 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.11.0"
+    "@emotion/babel-plugin": "^11.11.0",
+    "@svgr/webpack": "^8.1.0"
   }
 }
