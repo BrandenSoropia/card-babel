@@ -4,9 +4,9 @@ This app uses [theme-ui](https://theme-ui.com) to manage and apply its theme and
 
 ## How to Define/Update Default Styles for `theme-ui`'s Components
 
-`theme-ui` seems to support applying base styles to all instances of their components by defining the styles keyed under the component's name in the theme file! For example, if I wanted to define base styles to all `Button`s, I'd add those styles in an property called `button` in the theme!
+`theme-ui` does not seem to support applying base styles to all instances of their components. So I did it the old way using an object containing base styles for a component and then spreading it in each variant. See the `forms` section in the `theme.ts` for an example.
 
-This is similar to how they create and reference variants! https://theme-ui.com/guides/variants
+https://theme-ui.com/guides/variants
 
 <details>
 <summary>How I used to do it with `styled-system`: a.k.a the painfully manual way</summary>
@@ -66,3 +66,11 @@ export default theme;
 This is another convenienve of using `theme-ui` over `styled-system`. It's super nice!
 
 </details>
+
+## How to Make Tyscript Aware of the Theme's Values
+
+Using `useTheme` right out of the box, it gives access to all the theme's values. However if you use Typescript, the compiler doesn't know what values exist or not and will error out!
+
+To fix that, I followed theme-ui's docs which basically just does some simple Typescript one-liner to build the theme's type and export a custom `useTheme` hook type casted to it.
+
+https://theme-ui.com/guides/typescript

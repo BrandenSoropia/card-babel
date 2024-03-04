@@ -1,3 +1,5 @@
+import { Theme } from "theme-ui";
+
 /**
  * Using rems for better accessibility.
  */
@@ -22,7 +24,9 @@ const INPUT_BASE_STYLES = {
   fontSize: 1,
 };
 
-const theme = {
+const makeTheme = <T extends Theme>(t: T) => t;
+
+const theme = makeTheme({
   styles: { root: { fontSize: 1, maxWidth: "100vw", overflowX: "hidden" } },
   fontSizes: [_8px, _16px, _24px, _32px, _48px, _64px],
   fontWeights: {
@@ -58,6 +62,8 @@ const theme = {
       borderWidth: "3px",
     },
   },
-};
+});
+
+export type CardBabelTheme = typeof theme;
 
 export default theme;
