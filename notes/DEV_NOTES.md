@@ -16,12 +16,33 @@ Key take aways
 - Why I decided to have unique documents per card and per colour (if applicable)
   - [Ramblings-on-Document-Shape](#Ramblings-on-Document-Shape)
   - [Conclusion-on-Document-Shape](#Conclusion-on-Document-Shape)
+  - [Learned-more-about-SVGs-a11y](#Learned-more-about-SVGs-a11y)
 
 ## 📜 History
+
+### March 4, 2023
+
+#### Learned more about SVGs a11y
+
+- a11y Notes:
+  - I should add alt text for SVG's that have function/important info to a user, (like clicking it will close something etc). https://css-tricks.com/accessible-svgs/#aa-2-inline-svg
+- Optimization:
+  - Using SVGR to optimize and convert SVGs to React components.
+    - I realize since I don't have too many SVGs and also want to simplicity of coloring icons through props, I decided to just use SVGs via components. https://react-svgr.com/docs/what-is-svgr/
+
+### February 29, 2024
+
+- Frontend: Make super simple design
+  - ✅ Setup styled system for consistency and practice making another design system
+  - Taking inspiration from this design: https://dribbble.com/shots/23630207-Women-s-fashion-app
+  - Icons sourced from - https://iconduck.com/icons/313724/search
+    - Interesting read of using CSS `filter` to change an SVG's fill colour - https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991#43960991
+      - Decided to follow it since it seems faster than converting them to components which bundles them into the code and makes that bigger! Seems `next/image` also support SVGs enough! Performance notes - https://javascript.plainenglish.io/analysis-of-svg-component-usage-in-react-and-its-impact-on-build-size-cbf72668d15a
 
 ### February 26, 2024
 
 - ✅ Installed `theme-ui` and `emotion` for design system architecting
+  - ✅ Define colour system for main theme
   - Also found out the old library I used to use for theming, `styled-system`, is no longer supported! This took a while to figure out, I am embarrassed haha. Amazingly, `theme-ui` is much more convenient since it comes with common components like `Flex` and `Button` so I don't have to manually rebuild the primitive components each time!
   - Also trying to do some a11y font work for the first time: using `rems` instead of `px`. It's a little weird looking but makes sense. [Read about them here](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
     - Also because of using `theme-ui`, I learned a little about how JSX is transpiled to js. You can "extend" the JSX transpiler to recognize custom props, and that's how `theme-ui` transpiles the `sx` prop into styles using your theme values. [Explanation here](https://theme-ui.com/guides/jsx-pragma)
@@ -134,35 +155,21 @@ TBD on how to handle this!
 
 ## In Progress
 
-### February 29, 2024
-
-- Frontend: Make super simple design
-  - Taking inspiration from this design: https://dribbble.com/shots/23630207-Women-s-fashion-app
-  - Icons sourced from - https://iconduck.com/icons/313724/search
-    - Interesting read of using CSS `filter` to change an SVG's fill colour - https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991#43960991
-      - Decided to follow it since it seems faster than converting them to components which bundles them into the code and makes that bigger! Seems `next/image` also support SVGs enough! Performance notes - https://javascript.plainenglish.io/analysis-of-svg-component-usage-in-react-and-its-impact-on-build-size-cbf72668d15a
-
-### March 4, 2023
-
-- Learned more about SVGs
-
-  - a11y Notes:
-    - I should add alt text for SVG's that have function/important info to a user, (like clicking it will close something etc). https://css-tricks.com/accessible-svgs/#aa-2-inline-svg
-  - Optimization:
-
-    - Using SVGR to optimize and convert SVGs to React components.
-      - I realize since I don't have too many SVGs and also want to simplicity of coloring icons through props, I decided to just use SVGs via components. https://react-svgr.com/docs/what-is-svgr/
-
-  - Replace usages within app
-  - define colour system for main theme
+- Continue styling to match design
+  - Card Results
+  - Style notifications and use icon components
+  - Remove test buttons
 
 ## TODOs
 
-- Setup styled system for consistency and practice making another design system
 - Setup basic unit tests for search card query
 - Write a Cypress test for searching card that succeeds and fails
 - 🐛 Bugs to Fix:
   - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
+- Setup translations system
+  - For now a basic one that reads the system lang and tries to use that. If none found, default to ENG
+  - Source JP translations from deepl
+  - Write Test!
 - Clean up code !!!
 - Deploy to "staging" (if possible) and test if can actually connect not from localhost
 
