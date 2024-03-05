@@ -41,7 +41,6 @@ const renderSearchResults = ({
   } else if (hasResults) {
     return (
       <>
-        <h2>{strings.searchScreen.results.searchResultsHeader}</h2>
         {searchResults.map((card) => (
           <Card key={card.cardNumber[0]} {...card} />
         ))}

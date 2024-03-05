@@ -166,6 +166,7 @@ TBD on how to handle this!
 - Write a Cypress test for searching card that succeeds and fails
 - 🐛 Bugs to Fix:
   - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
+  - Fix icons `aria-labelledBy` not having the same generated ID.
 - Setup translations system
   - For now a basic one that reads the system lang and tries to use that. If none found, default to ENG
   - Source JP translations from deepl
