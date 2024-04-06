@@ -65,29 +65,6 @@ const theme = makeTheme({
       borderRadius: "100px",
       borderWidth: "3px",
     },
-    input: {
-      "&::-webkit-input-placeholder": {
-        /* WebKit, Blink, Edge */ color: "mustard",
-      },
-      "&:-moz-placeholder": {
-        /* Mozilla Firefox 4 to 18 */ color: "mustard",
-        opacity: 1,
-      },
-      "&::-moz-placeholder": {
-        /* Mozilla Firefox 19+ */ color: "mustard",
-        opacity: 1,
-      },
-      "&:-ms-input-placeholder": {
-        /* Internet Explorer 10-11 */ color: "mustard",
-      },
-      "&::-ms-input-placeholder": {
-        /* Microsoft Edge */ color: "mustard",
-      },
-      "&::placeholder": {
-        /* Most modern browsers support this now. */
-        color: "mustard",
-      },
-    },
   },
 });
 
