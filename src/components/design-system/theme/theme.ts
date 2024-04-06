@@ -34,6 +34,7 @@ const theme = makeTheme({
     heading: 900,
     bold: 700,
   },
+  // TODO: alias these as "t-shirt" sizes to make it easier to remember!
   spaces: [0, _4px, _8px, _16px, _24px, _32px, _48px, _64px],
   colors: {
     black: "#111111",
@@ -61,8 +62,31 @@ const theme = makeTheme({
   forms: {
     pill: {
       ...INPUT_BASE_STYLES,
-      borderRadius: "8px",
+      borderRadius: "100px",
       borderWidth: "3px",
+    },
+    input: {
+      "&::-webkit-input-placeholder": {
+        /* WebKit, Blink, Edge */ color: "mustard",
+      },
+      "&:-moz-placeholder": {
+        /* Mozilla Firefox 4 to 18 */ color: "mustard",
+        opacity: 1,
+      },
+      "&::-moz-placeholder": {
+        /* Mozilla Firefox 19+ */ color: "mustard",
+        opacity: 1,
+      },
+      "&:-ms-input-placeholder": {
+        /* Internet Explorer 10-11 */ color: "mustard",
+      },
+      "&::-ms-input-placeholder": {
+        /* Microsoft Edge */ color: "mustard",
+      },
+      "&::placeholder": {
+        /* Most modern browsers support this now. */
+        color: "mustard",
+      },
     },
   },
 });

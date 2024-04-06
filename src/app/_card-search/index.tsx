@@ -109,12 +109,15 @@ const CardSearch = () => {
         <button onClick={getAllFabCardData}>
           {strings.getAllFABCardsButtonCTA}
         </button>
+        <TestNotificationButton />
+
         <label htmlFor="cardSearchText">
           {strings.searchScreen.form.cardNumberInputLabel}
         </label>
         <Box
           sx={{
             position: "relative",
+            marginY: 3,
           }}
         >
           <Box
@@ -140,7 +143,7 @@ const CardSearch = () => {
             id="cardSearchText"
             name="cardSearchText"
             onChange={handleChange}
-            maxLength={128}
+            maxLength={6}
             placeholder={strings.searchScreen.form.searchCTA}
             value={searchText}
           />
@@ -166,9 +169,6 @@ const CardSearch = () => {
             </Button>
           )}
         </Box>
-
-        <button type="submit">{strings.searchScreen.form.searchCTA}</button>
-        <TestNotificationButton />
       </Flex>
       <div>{renderSearchResults({ searchResults, isLoading })}</div>
     </Flex>
