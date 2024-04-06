@@ -20,7 +20,12 @@ Key take aways
 
 ## 📜 History
 
-### March 4, 2023
+### April 6, 2024,
+
+- Fixed: `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
+  - Dumb reason, I was assuming markdown support HTML but it doesn't. The only reason I saw it work before is because at previous workplaces, we used `dangerouslySetHTML` to render strings with inline HTML in them 🤦. Instead, I just deleted and re-uploaded the data with proper markdown strings.
+
+### March 4, 2024
 
 #### Learned more about SVGs a11y
 
@@ -155,6 +160,8 @@ TBD on how to handle this!
 
 ## In Progress
 
+### April 6, 2024
+
 - Continue styling to match design
   - Card Results
   - Style notifications and use icon components
@@ -165,7 +172,6 @@ TBD on how to handle this!
 - Setup basic unit tests for search card query
 - Write a Cypress test for searching card that succeeds and fails
 - 🐛 Bugs to Fix:
-  - Try to fix `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
   - Fix icons `aria-labelledBy` not having the same generated ID.
 - Setup translations system
   - For now a basic one that reads the system lang and tries to use that. If none found, default to ENG

@@ -8,8 +8,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Once per Turn Attack Reaction</strong> - Banish a card from your hand face down: Turn the card banished this way face up. If it's an attack action card with cost 2 or less, put target attacking card with <strong>stealth</strong> from the active chain link on the bottom of its owner's deck, then put the banished card onto the active chain link as the attacking card.",
-        "jp-JA": "<strong>ターンに1回アタックリアクション</strong> - あなたの手札を1枚伏せて追放する:この方法で追放したカードを表向きにする。これがコスト2以下のアタックアクションカードなら、アクティブコンバットチェインの<strong>stealth</strong>を持つアタックアクションカードを対象としてそれをオーナーの山札の下へ置き、追放したカードをアクティブコンバットチェインに攻撃したプレイする。"
+        "en-US": "**Once per Turn Attack Reaction** - Banish a card from your hand face down: Turn the card banished this way face up. If it's an attack action card with cost 2 or less, put target attacking card with **stealth** from the active chain link on the bottom of its owner's deck, then put the banished card onto the active chain link as the attacking card.",
+        "jp-JA": "**ターンに1回アタックリアクション** - あなたの手札を1枚伏せて追放する:この方法で追放したカードを表向きにする。これがコスト2以下のアタックアクションカードなら、アクティブコンバットチェインの**stealth**を持つアタックアクションカードを対象としてそれをオーナーの山札の下へ置き、追放したカードをアクティブコンバットチェインに攻撃したプレイする。"
       }
     },
     {
@@ -20,8 +20,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Once per Turn Attack Reaction</strong> - Banish a card from your hand face down: Turn the card banished this way face up. If it's an attack action card with cost 2 or less, put target attacking card with <strong>stealth</strong> from the active chain link on the bottom of its owner's deck, then put the banished card onto the active chain link as the attacking card.",
-        "jp-JA": "<strong>ターンに1回アタックリアクション</strong> - あなたの手札を1枚伏せて追放する:この方法で追放したカードを表向きにする。これがコスト2以下のアタックアクションカードなら、アクティブコンバットチェインの<strong>stealth</strong>を持つアタックアクションカードを対象としてそれをオーナーの山札の下へ置き、追放したカードをアクティブコンバットチェインに攻撃したプレイする。"
+        "en-US": "**Once per Turn Attack Reaction** - Banish a card from your hand face down: Turn the card banished this way face up. If it's an attack action card with cost 2 or less, put target attacking card with **stealth** from the active chain link on the bottom of its owner's deck, then put the banished card onto the active chain link as the attacking card.",
+        "jp-JA": "**ターンに1回アタックリアクション** - あなたの手札を1枚伏せて追放する:この方法で追放したカードを表向きにする。これがコスト2以下のアタックアクションカードなら、アクティブコンバットチェインの**stealth**を持つアタックアクションカードを対象としてそれをオーナーの山札の下へ置き、追放したカードをアクティブコンバットチェインに攻撃したプレイする。"
       }
     },
     {
@@ -32,8 +32,8 @@
         "translationSource": "deepl"
       },
       "details": {
-        "en-US": "While Blacktek Whisperers is in your graveyard, at the start of your turn, you may destroy 2 Silvers you control. If you do, equip Blacktek Whisperers.<br><br><strong>Attack Reaction</strong> - Destroy Blacktek Whisperers: Target Assassin attack action card gains \"When this hits a hero, it gains <strong>go again<strong>.\"<br><br><strong>Battleworn</strong>",
-        "jp-JA": "Blacktek Whisperersがあなたの墓地にある間、あなたのターンの開始時に、あなたはあなたがコントロールするSilverを2体破壊してもよい。そうした場合、Blacktek Whisperersを装備する。<br><br><strong>Attack Reaction</strong> - Blacktek Whisperersを破壊する： 対象のアサシンの攻撃アクションカードは \"これがヒーローにヒットしたとき、<strong>go again</strong>を得る\"。<br><br><strong>Battlworn</strong>"
+        "en-US": "While Blacktek Whisperers is in your graveyard, at the start of your turn, you may destroy 2 Silvers you control. If you do, equip Blacktek Whisperers.<br><br>**Attack Reaction** - Destroy Blacktek Whisperers: Target Assassin attack action card gains \"When this hits a hero, it gains **go again**.\"<br><br>**Battleworn**",
+        "jp-JA": "Blacktek Whisperersがあなたの墓地にある間、あなたのターンの開始時に、あなたはあなたがコントロールするSilverを2体破壊してもよい。そうした場合、Blacktek Whisperersを装備する。<br><br>**Attack Reaction** - Blacktek Whisperersを破壊する： 対象のアサシンの攻撃アクションカードは \"これがヒーローにヒットしたとき、**go again**を得る\"。<br><br>**Battlworn**"
       }
     },
     {
@@ -44,8 +44,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Once per Turn Attack Reaction</strong> - 0: Target dagger you control that isn't on the active chain link deals 1 damage to target hero. If damage is dealt this way, the dagger has hit. Destroy the dagger.<br><br><strong>Blade Break</strong>",
-        "jp-JA": "<strong>ターンに1回アタックリアクション</strong> - 0:アクティブなチェインリンクにないあなたのコントロールするダガーを対象とし、それは1点のダメージをヒーローに与える。これによりダメージが与えられたなら、ダガーがヒットしたことになる。そのダガーを破壊する。<br><br><strong>Blade Break</strong><i>(コンバットチェインが閉じたときにこれでディフェンスしていたなら破壊する)</i>"
+        "en-US": "**Once per Turn Attack Reaction** - 0: Target dagger you control that isn't on the active chain link deals 1 damage to target hero. If damage is dealt this way, the dagger has hit. Destroy the dagger.<br><br>**Blade Break**",
+        "jp-JA": "**ターンに1回アタックリアクション** - 0:アクティブなチェインリンクにないあなたのコントロールするダガーを対象とし、それは1点のダメージをヒーローに与える。これによりダメージが与えられたなら、ダガーがヒットしたことになる。そのダガーを破壊する。<br><br>**Blade Break**<i>(コンバットチェインが閉じたときにこれでディフェンスしていたなら破壊する)</i>"
       }
     },
     {
@@ -56,8 +56,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Once per Turn Action</strong> - {R}{R}: <strong>Attack.</strong> <strong>Go again</strong><br><br><strong>Piercing 1</strong><i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more reaction cards this turn, those cards have -1{D} while defending.",
-        "jp-JA": "<strong>ターンに1回アクション</strong> - {R}{R}: <strong>アタック.</strong> <strong>Go again</strong><br><br><strong>Piercing 1</strong><i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上のリアクションアクションカードでディフェンされたとき、それらは-1{D}される。"
+        "en-US": "**Once per Turn Action** - {R}{R}: **Attack.** **Go again**<br><br>**Piercing 1**<i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more reaction cards this turn, those cards have -1{D} while defending.",
+        "jp-JA": "**ターンに1回アクション** - {R}{R}: **アタック.** **Go again**<br><br>**Piercing 1**<i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上のリアクションアクションカードでディフェンされたとき、それらは-1{D}される。"
       }
     },
     {
@@ -68,8 +68,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Once per Turn Action</strong> - {R}{R}: <strong>Attack.</strong> <strong>Go again</strong><strong>Piercing 1</strong><i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more equipment this turn, those equipment have -1{D} while defending.",
-        "jp-JA": "<strong>ターンに1回アクション</strong> - {R}{R}: <strong>アタック.</strong> <strong>Go Again</strong><br><br><strong>Piercing 1</strong><i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上の装備でディフェンスされたとき、それらは-1{D}される。"
+        "en-US": "**Once per Turn Action** - {R}{R}: **Attack.** **Go again****Piercing 1**<i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more equipment this turn, those equipment have -1{D} while defending.",
+        "jp-JA": "**ターンに1回アクション** - {R}{R}: **アタック.** **Go Again**<br><br>**Piercing 1**<i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上の装備でディフェンスされたとき、それらは-1{D}される。"
       }
     },
     {
@@ -87,8 +87,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Once per Turn Action</strong> - {R}{R}: <strong>Attack.</strong> <strong>Go again</strong><strong>Piercing 1</strong><i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more attack action cards this turn, those cards have -1{D} while defending.",
-        "jp-JA": "<strong>ターンに1回アクション</strong> - {R}{R}: <strong>アタック.</strong> <strong>Go Again</strong><br><br><strong>Piercing 1</strong><i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上のアタックアクションカードでディフェンスされたとき、それらは-1{D}される。"
+        "en-US": "**Once per Turn Action** - {R}{R}: **Attack.** **Go again****Piercing 1**<i>(If this is defended by an equipment, it has +1{P})</i><br><br>When this hits a hero, the next time they defend with 1 or more attack action cards this turn, those cards have -1{D} while defending.",
+        "jp-JA": "**ターンに1回アクション** - {R}{R}: **アタック.** **Go Again**<br><br>**Piercing 1**<i>(これが装備品によりディフェンスされたならこれは+1{P})</i><br><br>これがヒーローにヒットしたとき、このターン次に1枚以上のアタックアクションカードでディフェンスされたとき、それらは-1{D}される。"
       }
     },
     {
@@ -99,8 +99,8 @@
         "translationSource": "deepl"
       },
       "details": {
-        "en-US": "<strong>Contract</strong> - You are contracted to banish opponents' non-action cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck and a defending card.",
-        "jp-JA": "<strong>Contract</strong> - あなたは対戦相手のアクションでないカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、相手のデッキの一番上のカードと防御カード1枚を追放する。"
+        "en-US": "**Contract** - You are contracted to banish opponents' non-action cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck and a defending card.",
+        "jp-JA": "**Contract** - あなたは対戦相手のアクションでないカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、相手のデッキの一番上のカードと防御カード1枚を追放する。"
       }
     },
     {
@@ -135,8 +135,8 @@
         "translationSource": "deepl"
       },
       "details": {
-        "en-US": "<strong>Contract</strong> - You are contracted to banish opponents' red cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck and up to 1 card in their arsenal.",
-        "jp-JA": "<strong>Contract</strong> - あなたは対戦相手の赤のカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、そのヒーローのデッキの一番上のカードと、そのヒーローの武器庫にあるカード最大1枚を追放する。"
+        "en-US": "**Contract** - You are contracted to banish opponents' red cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck and up to 1 card in their arsenal.",
+        "jp-JA": "**Contract** - あなたは対戦相手の赤のカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、そのヒーローのデッキの一番上のカードと、そのヒーローの武器庫にあるカード最大1枚を追放する。"
       }
     },
     {
@@ -147,7 +147,7 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "<strong>Uzuri Specialization</strong><br><br>If you've played or activated an attack reaction this chain link, Shake Down has \"When this hits a hero, choose red, yellow, or blue. They reveal their hand. Banish a card of the chosen color.\"",
+        "en-US": "**Uzuri Specialization**<br><br>If you've played or activated an attack reaction this chain link, Shake Down has \"When this hits a hero, choose red, yellow, or blue. They reveal their hand. Banish a card of the chosen color.\"",
         "jp-JA": ""
       }
     },
@@ -159,8 +159,8 @@
         "translationSource": "https://libraryoffab.com/?p=180"
       },
       "details": {
-        "en-US": "Each hero puts an attack action card from their graveyard face down into their arsenal. Each hero that does, discards a card.<br><br>Create a Ponder token under your control and a Frailty token under each opponent's control.<br><br><strong>Go again</strong>",
-        "jp-JA": "各プレイヤーは墓地からアタックアクションカードを裏向きでアーセナルに置く。そうしたプレイヤーは、手札を1枚捨てる。<br><br>”Ponder”トークンをあなたのコントロールで、”Frailty”トークンを対戦相手のコントロールで生み出す。<br><br><strong>Go Again</strong>"
+        "en-US": "Each hero puts an attack action card from their graveyard face down into their arsenal. Each hero that does, discards a card.<br><br>Create a Ponder token under your control and a Frailty token under each opponent's control.<br><br>**Go again**",
+        "jp-JA": "各プレイヤーは墓地からアタックアクションカードを裏向きでアーセナルに置く。そうしたプレイヤーは、手札を1枚捨てる。<br><br>”Ponder”トークンをあなたのコントロールで、”Frailty”トークンを対戦相手のコントロールで生み出す。<br><br>**Go Again**"
       }
     },
     {
@@ -183,8 +183,8 @@
         "translationSource": "deepl"
       },
       "details": {
-        "en-US": "<strong>Contract</strong> - You are contracted to banish opponents' blue cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck, then look at their hand and banish a card.",
-        "jp-JA": "<strong>Contract</strong> - あなたは対戦相手の青のカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、相手のデッキの一番上のカードを追放し、その後相手の手札を見てカードを1枚追放する。"
+        "en-US": "**Contract** - You are contracted to banish opponents' blue cards. Whenever you complete this contract, create a Silver token.<br><br>When this hits a hero, banish the top card of their deck, then look at their hand and banish a card.",
+        "jp-JA": "**Contract** - あなたは対戦相手の青のカードを追放する契約を結ぶ。あなたがこの契約を完了するたび、シルバー・トークンを1体生成する。<br><br>これがヒーローに当たったとき、相手のデッキの一番上のカードを追放し、その後相手の手札を見てカードを1枚追放する。"
       }
     },
     {

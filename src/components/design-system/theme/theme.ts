@@ -66,6 +66,13 @@ const theme = makeTheme({
       borderWidth: "3px",
     },
   },
+  containers: {
+    card: {
+      bg: "white",
+      borderRadius: "20px",
+      padding: 3,
+    },
+  },
 });
 
 export type CardBabelTheme = typeof theme;
