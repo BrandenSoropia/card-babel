@@ -20,6 +20,10 @@ Key take aways
 
 ## 📜 History
 
+### April 7, 2024
+
+- Actually got Jest working finally! Seems Jest + Next 13.4+ is broken according to this thread, so the easiest fix for me was to downgrade - https://github.com/vercel/next.js/issues/40183#issuecomment-1544686425
+
 ### April 6, 2024,
 
 - Fixed: `strong` breaking when they are at the start of the string(?). See `DYN122` as example card.
@@ -162,15 +166,18 @@ TBD on how to handle this!
 
 ### April 6, 2024
 
+- Setup basic unit tests for search card query
+
+## TODOs
+
+- Practice routing:
+  - Make /card/{cardId} that shows loads that specific card's details
+  - Back a back button to go back to search
+- Write a Cypress test for searching card that succeeds and fails
 - Continue styling to match design
   - Card Results
   - Style notifications and use icon components
   - Remove test buttons
-
-## TODOs
-
-- Setup basic unit tests for search card query
-- Write a Cypress test for searching card that succeeds and fails
 - 🐛 Bugs to Fix:
   - Fix icons `aria-labelledBy` not having the same generated ID.
 - Setup translations system
