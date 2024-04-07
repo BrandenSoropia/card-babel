@@ -1,4 +1,6 @@
 /**
+ * Note: Uses require/module.exports to make jest happy.
+ *
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
