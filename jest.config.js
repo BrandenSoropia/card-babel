@@ -22,6 +22,9 @@ const config = {
   // The test environment that will be used for testing
   testEnvironment: "jsdom",
   moduleDirectories: ["node_modules", "<rootDir>/"],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+  },
 };
 
 module.exports = createJestConfig(config);

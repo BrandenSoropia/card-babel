@@ -164,9 +164,11 @@ TBD on how to handle this!
 
 ## In Progress
 
-### April 6, 2024
+### April 8, 2024
 
-- Setup basic unit tests for search card query
+- Write basic unit test for search by card id
+- write basic test for search card showing results
+- Fix "enter" press searching all cards instead of search query
 
 ## TODOs
 
