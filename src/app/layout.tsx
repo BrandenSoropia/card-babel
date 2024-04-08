@@ -1,7 +1,9 @@
 "use client";
 
-import NotificationFactoryProvider from "@/components/notification-factory/NotificationFactoryProvider";
-import NotificationFactory from "@/components/notification-factory/NotificationFactory";
+import {
+  NotificationFactoryProvider,
+  NotificationFactory,
+} from "@/components/notification-factory";
 import { ThemeProvider } from "@/components/design-system";
 import { Box } from "theme-ui";
 
