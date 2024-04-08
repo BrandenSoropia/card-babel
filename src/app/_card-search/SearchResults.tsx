@@ -3,7 +3,8 @@ import Loading from "./Loading";
 import NoSearchResult from "./NoSearchResult";
 import InitialSearchSuggestion from "./InitialSearchSuggestion";
 import { FABCard } from "@/lib/firebase/documents.types";
-import React from "react";
+import React, { ReactNode } from "react";
+import { Box } from "theme-ui";
 
 type SearchResultsProps = {
   isLoading: Boolean;
@@ -19,17 +20,28 @@ const SearchResults: React.FC<SearchResultsProps> = ({
     !isLoading && (!searchResults || searchResults?.length === 0);
   const hasResults = !isLoading && searchResults && searchResults?.length > 0;
 
+  let content: ReactNode[] = [];
   if (isLoading) {
-    return <Loading />;
+    content.push(<Loading />);
   } else if (isInitialSearch) {
-    return <InitialSearchSuggestion />;
+    content.push(<InitialSearchSuggestion />);
   } else if (hasNoResults) {
-    return <NoSearchResult />;
+    content.push(<NoSearchResult />);
   } else if (hasResults) {
-    return searchResults.map((card) => (
+    content = searchResults.map((card) => (
       <Card key={card.cardNumber[0]} {...card} />
     ));
   }
+
+  return (
+    <Box
+      sx={{
+        marginY: 2,
+      }}
+    >
+      {content}
+    </Box>
+  );
 };
 
 export default SearchResults;

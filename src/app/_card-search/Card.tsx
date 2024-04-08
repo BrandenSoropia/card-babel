@@ -3,7 +3,7 @@ import { FABCard } from "@/lib/firebase/documents.types";
 import strings from "./strings.json";
 import { Box, Heading, Text } from "theme-ui";
 
-const Card = ({ name, cardNumber, details, translationInfo }: FABCard) => {
+const Card = ({ name, cardNumber, details }: FABCard) => {
   return (
     <Box variant="containers.card">
       <Heading as="h2">

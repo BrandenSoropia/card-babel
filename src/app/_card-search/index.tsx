@@ -126,7 +126,10 @@ const CardSearch = () => {
           marginBottom: 2,
         }}
       >
-        <label sx={{ marginBottom: 2 }} htmlFor="cardSearchText">
+        <label
+          sx={{ marginBottom: 2, fontSize: 2, fontWeight: "bold" }}
+          htmlFor="cardSearchText"
+        >
           {strings.searchScreen.form.cardNumberInputLabel}
         </label>
         <Flex>

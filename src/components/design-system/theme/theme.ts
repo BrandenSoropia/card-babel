@@ -71,6 +71,7 @@ const theme = makeTheme({
       bg: "white",
       borderRadius: "20px",
       padding: 3,
+      marginBottom: 2, // TODO: This is too specific a style, it should be passed in as additional styles.
     },
   },
 });
