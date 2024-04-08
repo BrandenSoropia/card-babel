@@ -19,6 +19,7 @@ import { useTheme } from "@/components/design-system";
 import Image from "next/image";
 import IconMagnifyingGlass from "@/icons/MagnifyingGlass.icon";
 import IconX from "@/icons/X.icon";
+import SearchResults from "./SearchResults";
 
 const renderSearchResults = ({
   isLoading,
@@ -115,35 +116,62 @@ const CardSearch = () => {
     <Flex
       sx={{
         flexDirection: "column",
+        padding: 3,
       }}
     >
       <Flex
         as="form"
         sx={{
           flexDirection: "column",
+          marginBottom: 2,
         }}
-        onSubmit={handleSearchCardSubmit}
       >
-        <button onClick={handleGetAllCards}>
-          {strings.getAllFABCardsButtonCTA}
-        </button>
-        <TestNotificationButton />
-
-        <label htmlFor="cardSearchText">
+        <label sx={{ marginBottom: 2 }} htmlFor="cardSearchText">
           {strings.searchScreen.form.cardNumberInputLabel}
         </label>
-        <Box
-          sx={{
-            position: "relative",
-            marginY: 3,
-          }}
-        >
-          <Box
+        <Flex>
+          <Flex sx={{ position: "relative", flexGrow: 1, marginRight: 2 }}>
+            <Input
+              variant="pill"
+              type="text"
+              id="cardSearchText"
+              name="cardSearchText"
+              onChange={handleChange}
+              maxLength={6}
+              placeholder={strings.searchScreen.form.searchCTA}
+              value={searchText}
+            />
+            {!!searchText && (
+              <Button
+                variant="clear"
+                sx={{
+                  position: "absolute",
+                  top: 2,
+                  right: 2,
+                  zIndex: 1,
+                  padding: 0,
+                }}
+                type="button"
+                onClick={clearSearchText}
+              >
+                <IconX
+                  stroke={theme.colors.white}
+                  height={24}
+                  width={24}
+                  title={strings.searchScreen.form.clearCTA}
+                />
+              </Button>
+            )}
+          </Flex>
+          <button
             sx={{
-              position: "absolute",
-              top: 2,
-              left: 2,
+              bg: "green",
+              borderRadius: "3px",
+              borderWidth: 0,
+              paddingX: 3,
             }}
+            type="submit"
+            onClick={handleSearchCardSubmit}
           >
             <IconMagnifyingGlass
               stroke={theme.colors.white}
@@ -151,44 +179,14 @@ const CardSearch = () => {
               width={24}
               title={strings.searchScreen.form.searchCTA}
             />
-          </Box>
-          <Input
-            sx={{
-              paddingLeft: 4,
-            }}
-            variant="pill"
-            type="text"
-            id="cardSearchText"
-            name="cardSearchText"
-            onChange={handleChange}
-            maxLength={6}
-            placeholder={strings.searchScreen.form.searchCTA}
-            value={searchText}
-          />
-          {!!searchText && (
-            <Button
-              variant="clear"
-              sx={{
-                position: "absolute",
-                top: 2,
-                right: 2,
-                zIndex: 1,
-                padding: 0,
-              }}
-              type="button"
-              onClick={clearSearchText}
-            >
-              <IconX
-                stroke={theme.colors.white}
-                height={24}
-                width={24}
-                title={strings.searchScreen.form.clearCTA}
-              />
-            </Button>
-          )}
-        </Box>
+          </button>
+        </Flex>
       </Flex>
-      <div>{renderSearchResults({ searchResults, isLoading })}</div>
+      <button sx={{ marginBottom: 2 }} onClick={handleGetAllCards}>
+        {strings.testGetAllFABCardsButtonCTA}
+      </button>
+      <TestNotificationButton />
+      <SearchResults isLoading={isLoading} searchResults={searchResults} />
     </Flex>
   );
 };

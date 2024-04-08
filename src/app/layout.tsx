@@ -18,7 +18,6 @@ export default function RootLayout({
         as="body"
         sx={{
           backgroundColor: "grey",
-          marginX: 2,
         }}
       >
         <ThemeProvider>

@@ -2,7 +2,7 @@
   "searchScreen": {
     "form": {
       "cardNumberInputLabel": "Search by Card Number",
-      "searchCTA": "Search By Card Number (ex: DYN122)",
+      "searchCTA": "ex: DYN122",
       "clearCTA": "Clear search criteria",
       "errors": {
         "search": "An error occured trying to find that card. Please try refreshing the page and try again. If the error occurs, please contact the project owner."
@@ -20,7 +20,8 @@
     "header": "No results found.",
     "suggestion": "Please check the card number is correct; it should start with 3 letters then end with 3 numbers. For example \"DYN122\". If it's still not finding a result, the card probably isn't added in to this app's database, please notify the project owner."
   },
-  "getAllFABCardsButtonCTA": "Get all FaB Card Data",
+  "testGetAllFABCardsButtonCTA": "Testing Only: Get all FaB Card Data",
+  "testNotificationSystemCTA": "Test Notification System",
   "card": {
     "translationHeader": {
       "english": "English",

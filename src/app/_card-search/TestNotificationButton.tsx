@@ -2,6 +2,7 @@ import {
   useNotificationFactoryContext,
   NOTIFICATION_TYPES,
 } from "@/components/notification-factory";
+import strings from "./strings.json";
 
 const TestNotificationButton = () => {
   const { setNotification } = useNotificationFactoryContext();
@@ -13,7 +14,7 @@ const TestNotificationButton = () => {
         setNotification({ type: NOTIFICATION_TYPES.ERROR });
       }}
     >
-      Test Notification System
+      {strings.testGetAllFABCardsButtonCTA}
     </button>
   );
 };
