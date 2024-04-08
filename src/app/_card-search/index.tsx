@@ -39,13 +39,9 @@ const renderSearchResults = ({
   } else if (hasNoResults) {
     return <NoSearchResult />;
   } else if (hasResults) {
-    return (
-      <>
-        {searchResults.map((card) => (
-          <Card key={card.cardNumber[0]} {...card} />
-        ))}
-      </>
-    );
+    return searchResults.map((card) => (
+      <Card key={card.cardNumber[0]} {...card} />
+    ));
   }
 };
 
@@ -71,7 +67,7 @@ const CardSearch = () => {
     setSearchText("");
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSearchCardSubmit = async (e: FormEvent) => {
     try {
       e.preventDefault();
       if (!!searchResults?.length) {
@@ -81,6 +77,28 @@ const CardSearch = () => {
       setIsLoading(true);
 
       const results = await getCardSearchResults(searchText);
+      setSearchResults(results);
+      setIsLoading(false);
+    } catch (e) {
+      setNotification({
+        type: NOTIFICATION_TYPES.ERROR,
+        message: strings.searchScreen.form.errors.search,
+      });
+
+      setIsLoading(false);
+    }
+  };
+
+  const handleGetAllCards = async (e: FormEvent) => {
+    try {
+      e.preventDefault();
+      if (!!searchResults?.length) {
+        setSearchResults([]);
+      }
+
+      setIsLoading(true);
+
+      const results = await getAllFabCardData();
       setSearchResults(results);
       setIsLoading(false);
     } catch (e) {
@@ -104,9 +122,9 @@ const CardSearch = () => {
         sx={{
           flexDirection: "column",
         }}
-        onSubmit={handleSubmit}
+        onSubmit={handleSearchCardSubmit}
       >
-        <button onClick={getAllFabCardData}>
+        <button onClick={handleGetAllCards}>
           {strings.getAllFABCardsButtonCTA}
         </button>
         <TestNotificationButton />

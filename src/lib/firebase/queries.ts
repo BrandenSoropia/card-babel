@@ -6,24 +6,6 @@ import UZURI_CARD_LIST from "./sample_uzuri_blitz_deck_translations.json";
 
 const fabCardsCollection = collection(db, "games/fleshAndBlood/cards");
 
-export const getAllFabCardData = async () => {
-  try {
-    const querySnap = await getDocs(fabCardsCollection);
-
-    if (!querySnap.empty) {
-      console.log("### Printing docs");
-      querySnap.forEach((doc) => {
-        console.log("### doc", doc.data());
-      });
-    } else {
-      // docSnap.data() will be undefined in this case
-      console.log("No documents!");
-    }
-  } catch (error) {
-    console.log("### getAllFabCardData errored:", error);
-  }
-};
-
 /**
  * Just a hardcoded way for me to quickly upload card data to Firebase!
  *
@@ -44,6 +26,26 @@ export const writeUzuriSampleCards = async () => {
     });
   } catch (e) {
     console.log("### Error adding cards", e);
+  }
+};
+
+export const getAllFabCardData = async () => {
+  try {
+    const querySnap = await getDocs(fabCardsCollection);
+
+    if (!querySnap.empty) {
+      const results = querySnap.docs.map((docSnap) => {
+        return docSnap.data() as unknown as FABCard;
+      });
+
+      return results;
+    }
+
+    // TODO: Probably should notify there's something wrong to user
+    console.log("No documents!");
+    return [];
+  } catch (error) {
+    console.log("### getAllFabCardData errored:", error);
   }
 };
 
