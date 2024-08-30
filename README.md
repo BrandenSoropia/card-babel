@@ -6,7 +6,7 @@ Using React (via Next.js), Typescript and Firebase!
 
 
 📽️ In Action:
-https://github.com/user-attachments/assets/6ecc82d5-21f8-4b0e-8904-d3f56aff925f
+<video width="630" height="300" src="https://github.com/user-attachments/assets/6ecc82d5-21f8-4b0e-8904-d3f56aff925f"></video>
 
 
 ## Running the App Locally
